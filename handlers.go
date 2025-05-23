@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
 )
 
@@ -13,38 +12,38 @@ func handleHealthCheck(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) handleReadabilityURL(w http.ResponseWriter, r *http.Request) {
-	// parse json from response
-	// get sought URL
-	// get URL data with http.Get()
-	// send to readability module
-	// return RedabilityResult
 	var req ReadabilityURLRequest
 	decoder := json.NewDecoder(r.Body)
+	defer r.Body.Close()
 	err := decoder.Decode(&req)
 	if err != nil {
 		WriteError(w, http.StatusBadRequest, fmt.Sprintf("cannot parse json: %v\n", err))
 		return
 	}
-
-	resp, err := http.Get(req.Url)
+	result, err := s.readabilityParser.ParseURL(req.Url)
 	if err != nil {
-		WriteError(w, http.StatusBadGateway, fmt.Sprintf("cannot get page: %v\n", err))
+		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot get readability: %v\n", err))
 		return
 	}
-
-	body, err := io.ReadAll(resp.Body)
-	defer resp.Body.Close()
-	if err != nil {
-		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot parse get request: %v\n", err))
-		return
-	}
-
-	result, err := s.readabilityParser.ParseHTML(string(body))
-	if err != nil {
-		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("readability error: %v\n", err))
-		return
-	}
-
 	WriteJsonResponse(w, http.StatusOK, result)
+}
 
+func (s *Server) handleAssembler(w http.ResponseWriter, r *http.Request) {
+	// accepts a readabilityResult JSON and returns epub
+	var readabilityResult ReadabilityResult
+	decoder := json.NewDecoder(r.Body)
+	defer r.Body.Close()
+	err := decoder.Decode(&readabilityResult)
+	if err != nil {
+		WriteError(w, http.StatusBadRequest, fmt.Sprintf("cannot parse json: %v\n", err))
+		return
+	}
+	// accepts a ReadabilityResult and returns a .EPUB
+	html := GenerateHTML(readabilityResult.Title, readabilityResult.Content)
+	epubData, err := ConvertStringWithPandoc(html, "html", "epub")
+	if err != nil {
+		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot convert file: %v\n", err))
+		return
+	}
+	WriteEpubResponse(w, http.StatusOK, epubData, readabilityResult.Title)
 }

@@ -1,36 +1,44 @@
 package main
 
 import (
-	"encoding/json"
-	"log"
-	"net/http"
+	"fmt"
+	"os/exec"
+	"strings"
 )
 
-func WriteError(w http.ResponseWriter, statusCode int, message string) {
-	errResp := ErrorResponse{
-		Status:  statusCode,
-		Message: message,
-	}
+func ConvertFileWithPandoc(inputFile, outputFile, fromFormat, toFormat string) error {
+	cmd := exec.Command("pandoc",
+		"-f", fromFormat,
+		"-t", toFormat,
+		"-o", outputFile,
+		inputFile)
 
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(statusCode)
-
-	err := json.NewEncoder(w).Encode(errResp)
-	if err != nil {
-		log.Printf("Failed to encode error response: %v", err)
-		w.Write([]byte(`{"status":500,"message":"Internal server error"}`))
-	}
+	return cmd.Run()
 }
 
-func WriteJsonResponse(w http.ResponseWriter, statusCode int, r any) {
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(statusCode)
+func ConvertStringWithPandoc(content, fromFormat, toFormat string) ([]byte, error) {
+	cmd := exec.Command("pandoc", "-f", fromFormat, "-t", toFormat)
 
-	err := json.NewEncoder(w).Encode(r)
+	cmd.Stdin = strings.NewReader(content)
+
+	output, err := cmd.CombinedOutput()
 	if err != nil {
-		log.Printf("Failed to encode json response: %v", err)
-		w.Write([]byte(`{"status":500,"message":"Internal server error"}`))
-		return
+		return []byte{}, err
 	}
 
+	return output, nil
+}
+
+func GenerateHTML(title, body string) string {
+	return fmt.Sprintf(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%s</title>
+</head>
+<body>
+    %s
+</body>
+</html>`, title, body)
 }

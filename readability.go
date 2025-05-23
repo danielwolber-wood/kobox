@@ -194,6 +194,25 @@ func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityResult, 
 	return &result, nil
 }
 
+func (rp *ReadabilityParser) ParseURL(url string) (*ReadabilityResult, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	defer resp.Body.Close()
+	if err != nil {
+		return nil, err
+	}
+
+	result, err := rp.ParseHTML(string(body))
+	if err != nil {
+		return nil, err
+	}
+	return result, nil
+}
+
 func loadReadabilityJS() (string, error) {
 	resp, err := http.Get("https://raw.githubusercontent.com/mozilla/readability/main/Readability.js")
 	if err != nil {
