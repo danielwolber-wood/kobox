@@ -1,3 +1,4 @@
+// https://opml.org/spec2.opml
 package main
 
 import (
