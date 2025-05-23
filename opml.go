@@ -40,7 +40,7 @@ func ParseOPML(xmlData string) (*OPML, error) {
 func ParseOPMLFromReader(reader io.Reader) (*OPML, error) {
 	var opml OPML
 	decoder := xml.NewDecoder(reader)
-	err := decoder.Decode(opml)
+	err := decoder.Decode(&opml)
 	if err != nil {
 		return nil, err
 	}
