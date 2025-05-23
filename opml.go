@@ -14,7 +14,7 @@ type OPML struct {
 }
 
 type Head struct {
-	title string `xml:"title"'`
+	Title string `xml:"title"`
 }
 
 type Body struct {
