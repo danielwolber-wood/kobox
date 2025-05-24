@@ -8,7 +8,7 @@ import (
 )
 
 // Fetch accepts a URL string and returns HTML
-func Fetch(url URL) (string, error) {
+func Fetch(url URL) (HTML, error) {
 	resp, err := http.Get(string(url))
 	if err != nil {
 		return "", err
@@ -18,7 +18,7 @@ func Fetch(url URL) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return string(data), nil
+	return HTML(data), nil
 }
 
 // Extract accepts HTML and returns a ReadabilityObject
