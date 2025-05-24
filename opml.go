@@ -30,7 +30,12 @@ type Outline struct {
 }
 
 func NewOPML() *OPML {
-	return &OPML{Version: "2.0", Head: Head{Title: "Feed Subscriptions"}, Body: Body{Outline: Outline{}}}
+	return &OPML{
+		XMLName: xml.Name{},
+		Version: "2.0",
+		Head:    Head{Title: "Feed Subscriptions"},
+		Body:    Body{Outline: Outline{}},
+	}
 }
 
 func ParseOPML(xmlData string) (*OPML, error) {
@@ -72,4 +77,13 @@ func (outline *Outline) ExtractFeeds() []Outline {
 	}
 
 	return feeds
+}
+
+func (opml *OPML) AddFeedFromOutline(outline Outline) {
+	opml.Body.Outline.Outlines = append(opml.Body.Outline.Outlines, outline)
+}
+
+func (opml *OPML) AddFeed(title, url, feedType string) {
+	outline := Outline{Text: title, Type: feedType, XMLUrl: url, Outlines: []Outline}
+	opml.AddFeedFromOutline(outline)
 }
