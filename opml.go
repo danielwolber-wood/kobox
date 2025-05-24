@@ -52,6 +52,15 @@ func ParseOPMLFromReader(reader io.Reader) (*OPML, error) {
 	return &opml, nil
 }
 
+func ParseOPMLFile(filename string) (*OPML, error) {
+	file, err := os.Open(filename)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	return ParseOPMLFromReader(file)
+}
+
 func (outline *Outline) ExtractFeeds() []Outline {
 	var feeds []Outline
 	if outline.XMLUrl != "" {
@@ -63,14 +72,4 @@ func (outline *Outline) ExtractFeeds() []Outline {
 	}
 
 	return feeds
-
-}
-
-func ParseOPMLFile(filename string) (*OPML, error) {
-	file, err := os.Open(filename)
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-	return ParseOPMLFromReader(file)
 }
