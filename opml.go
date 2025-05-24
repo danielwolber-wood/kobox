@@ -29,8 +29,8 @@ type Outline struct {
 	Outlines []Outline `xml:"outline,omitempty"`
 }
 
-func NewOPML() *OPML {
-	return &OPML{
+func NewOPML() OPML {
+	return OPML{
 		XMLName: xml.Name{},
 		Version: "2.0",
 		Head:    Head{Title: "Feed Subscriptions"},
@@ -38,29 +38,29 @@ func NewOPML() *OPML {
 	}
 }
 
-func ParseOPML(xmlData string) (*OPML, error) {
+func ParseOPML(xmlData string) (OPML, error) {
 	var opml OPML
 	err := xml.Unmarshal([]byte(xmlData), &opml)
 	if err != nil {
-		return nil, err
+		return OPML{}, err
 	}
-	return &opml, nil
+	return opml, nil
 }
 
-func ParseOPMLFromReader(reader io.Reader) (*OPML, error) {
+func ParseOPMLFromReader(reader io.Reader) (OPML, error) {
 	var opml OPML
 	decoder := xml.NewDecoder(reader)
 	err := decoder.Decode(&opml)
 	if err != nil {
-		return nil, err
+		return OPML{}, err
 	}
-	return &opml, nil
+	return opml, nil
 }
 
-func ParseOPMLFile(filename string) (*OPML, error) {
+func ParseOPMLFile(filename string) (OPML, error) {
 	file, err := os.Open(filename)
 	if err != nil {
-		return nil, err
+		return OPML{}, err
 	}
 	defer file.Close()
 	return ParseOPMLFromReader(file)
