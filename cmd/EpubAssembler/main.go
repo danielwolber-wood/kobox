@@ -15,7 +15,6 @@ func main() {
 	r.HandleFunc("/health", handleHealthCheck)
 	r.HandleFunc("/v1/api/readability", s.handleReadabilityURL)
 	r.HandleFunc("/v1/api/assembler", s.handleAssembler)
-	r.HandleFunc("POST /v1/api/feeds", s.handleFeedPost)
 	fmt.Println("Serving on :8080")
 	http.ListenAndServe(":8080", r)
 

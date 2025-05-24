@@ -47,22 +47,3 @@ func (s *Server) handleAssembler(w http.ResponseWriter, r *http.Request) {
 	}
 	WriteEpubResponse(w, http.StatusOK, epubData, readabilityResult.Title)
 }
-
-func (s *Server) handleFeedPost(w http.ResponseWriter, r *http.Request) {
-	// TODO check if feed is already in OPML
-	// adds a given URL to OPML
-	var req AddFeedRequest
-	decoder := json.NewDecoder(r.Body)
-	err := decoder.Decode(&req)
-	if err != nil {
-		WriteError(w, http.StatusBadRequest, fmt.Sprintf("cannot parse json: %v\n", err.Error()))
-	}
-	url := req.url
-	// from a URL, I need to get the title
-	feed, err := ParseWithGofeed(url)
-	if err != nil {
-		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot parse feed: %v\n", err.Error()))
-	}
-	s.opml.AddFeed(feed.Title, feed.Link, feed.FeedType)
-	w.WriteHeader(http.StatusOK)
-}
