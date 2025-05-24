@@ -52,14 +52,14 @@ func ParseOPMLFromReader(reader io.Reader) (*OPML, error) {
 	return &opml, nil
 }
 
-func ExtractFeeds(outline Outline) []Outline {
+func (outline *Outline) ExtractFeeds() []Outline {
 	var feeds []Outline
 	if outline.XMLUrl != "" {
-		feeds = append(feeds, outline)
+		feeds = append(feeds, *outline)
 	}
 
 	for _, nested := range outline.Outlines {
-		feeds = append(feeds, ExtractFeeds(nested)...)
+		feeds = append(feeds, nested.ExtractFeeds()...)
 	}
 
 	return feeds
