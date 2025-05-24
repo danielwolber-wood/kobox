@@ -36,6 +36,7 @@ func (s *Server) worker(n int) {
 		return
 	}
 	for job := range s.jobQueue {
+		// TODO as done here, there is a bug: it doesn't update the steps correctly
 		switch job.currentStep {
 		case StepPrefetch:
 			fmt.Println("fetching")
@@ -45,32 +46,31 @@ func (s *Server) worker(n int) {
 				continue
 			}
 			job.fullText = fullPage
-			/*
-				fmt.Println("extracting")
-				ro, err := Extract(*jsWorker, job.fullText)
-				if err != nil {
-					log.Printf("Error extracting: %v\n", err)
-					continue
-				}
-				job.readabilityObject = ro
-				fmt.Printf("content is %v\n", job.readabilityObject.Content)
-			*/
-			epub, err := ConvertStringWithPandoc(fullPage, "html", "epub")
+			// s.jobQueue <- job
+		case StepFetched:
+			// run extraction, html -> ro
+			// TODO should check if a manual title was passed in
+			fmt.Println("extracting")
+			ro, err := Extract(*jsWorker, job.fullText)
 			if err != nil {
-				log.Printf("Error converting with pandoc: %v\n", err)
+				log.Printf("Error extracting: %v\n", err)
 				continue
 			}
-			title := job.readabilityObject.Title
-			fmt.Printf("title is %v\n", title)
-			ro := ReadabilityObject{Content: string(epub), Title: title}
 			job.readabilityObject = ro
+			fmt.Printf("content is %v\n", job.readabilityObject.Content)
+			continue
+		case StepExtracted:
+			// run epub generation, ro -> epub []bytes
 			fmt.Println("generating")
-			/*epub, err = Generate(job.readabilityObject)
+			epub, err := Generate(job.readabilityObject)
 			if err != nil {
 				log.Printf("Error generating epub: %v\n", err)
 				continue
-			} */
+			}
 			job.epub = epub
+			continue
+		case StepGenerated:
+			// upload to dropbox, construct upload object
 			u := UploadObject{
 				Data:            job.epub,
 				Mimetype:        "application/epub+zip",
@@ -83,14 +83,7 @@ func (s *Server) worker(n int) {
 				log.Printf("Error uploading: %v\n", err)
 			}
 			fmt.Println("done")
-		case StepFetched:
-			// run extraction, html -> ro
-			continue
-		case StepExtracted:
-			// run epub generation, ro -> epub []bytes
-			continue
-		case StepGenerated:
-			// upload to dropbox, construct upload object
+			// TODO add to queue
 			continue
 		case StepUploaded:
 			// do nothing now, but should be a "send success to client that made request" step
@@ -142,7 +135,6 @@ func (s *Server) worker(n int) {
 				}
 				fmt.Println("done")
 				continue
-
 			}
 		}
 	}

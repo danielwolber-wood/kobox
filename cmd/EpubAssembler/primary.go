@@ -22,10 +22,15 @@ func Fetch(url URL) (HTML, error) {
 }
 
 // Extract accepts HTML and returns a ReadabilityObject
-func Extract(worker JSWorker, html HTML) (ReadabilityObject, error) {
+func Extract(worker JSWorker, html HTML, title string) (ReadabilityObject, error) {
+	// TODO This function doesn't seem to work, may be a limitation of Readability.js; it's hard for me to debug since I don't know JS
+	// it seems to be returning a big mess instead of extracted body, which is what confuses me
 	obj, err := worker.ParseHTML(html)
 	if err != nil {
 		return ReadabilityObject{}, err
+	}
+	if title != "" {
+		obj.Title = title
 	}
 	return *obj, nil
 }
