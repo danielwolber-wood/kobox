@@ -60,7 +60,7 @@ func ParseRSSFromReader(reader io.Reader) (*RSS, error) {
 	return &rss, nil
 }
 
-func ExtractItems(rss RSS) []Item {
+func (rss *RSS) ExtractItems() []Item {
 	var items []Item
 	for _, item := range rss.Channel.Items {
 		items = append(items, item)
