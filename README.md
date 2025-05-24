@@ -22,3 +22,15 @@ I think there would likely be a few services:
 * **Processor**: uses readability.js to extract the body and title from the webpage
 * **Assembler**: converts the extracted components into a styled .EPUB file
 * **Uploader**: uploaders the .EPUB to Dropbox via the HTTP API.
+
+## TODO
+
+* Caching
+* Redirection
+* Dropbox integration
+* Crawling + Crawl Tracking
+* End-to-End API
+* OPML integration
+* Configuration file
+* Download tracking
+* Feed storage
