@@ -1,7 +1,7 @@
 package main
 
 import (
-	"embed"
+	_ "embed"
 	"github.com/dop251/goja"
 )
 
@@ -9,8 +9,8 @@ const (
 	StepPrefetch = iota
 	StepFetched
 	StepExtracted
-	StepGenerate
-	StepUpload
+	StepGenerated
+	StepUploaded
 )
 
 type Step byte
@@ -20,6 +20,16 @@ type Epub []byte
 type URL string
 
 type HTML string
+
+type URLRequestObject struct {
+	Url   URL    `json:"url"`
+	Title string `json:"title"`
+}
+
+type HTMLRequestObject struct {
+	Html  HTML   `json:"html"`
+	Title string `json:"title"`
+}
 
 type ReadabilityObject struct {
 	Title   string `json:"title"`
@@ -45,6 +55,10 @@ type JSWorker struct {
 }
 
 type Job struct {
-	currentStep Step
-	data        any
+	currentStep       Step
+	url               URL
+	fullText          HTML
+	epub              Epub
+	readabilityObject ReadabilityObject
+	uploadObject      UploadObject
 }

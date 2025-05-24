@@ -11,11 +11,14 @@ func main() {
 	if err != nil {
 		log.Fatalf("error creating server: %v\n", err.Error())
 	}
+	numWorkers := 5
+	for i := 0; i < numWorkers; i++ {
+		go s.worker(i)
+	}
+
 	r := http.NewServeMux()
 	r.HandleFunc("/health", handleHealthCheck)
-	r.HandleFunc("/v1/api/readability", s.handleReadabilityURL)
-	r.HandleFunc("/v1/api/assembler", s.handleAssembler)
-	//r.HandleFunc("/v2/api/fetch", s.handleFetch)
+	r.HandleFunc("/v2/api/upload/url", s.handlerUploadURL)
 	//r.HandleFunc("/v2/api/extract", s.handleExtract)
 	//r.HandleFunc("/v2/api/generate", s.handleGenerate)
 	//r.HandleFunc("/v2/api/upload", s.handleUpload)

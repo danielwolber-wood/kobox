@@ -16,10 +16,10 @@ func ConvertFileWithPandoc(inputFile, outputFile, fromFormat, toFormat string) e
 	return cmd.Run()
 }
 
-func ConvertStringWithPandoc(content, fromFormat, toFormat string) (Epub, error) {
+func ConvertStringWithPandoc(content HTML, fromFormat, toFormat string) (Epub, error) {
 	cmd := exec.Command("pandoc", "-f", fromFormat, "-t", toFormat)
 
-	cmd.Stdin = strings.NewReader(content)
+	cmd.Stdin = strings.NewReader(string(content))
 
 	output, err := cmd.CombinedOutput()
 	if err != nil {
@@ -29,8 +29,8 @@ func ConvertStringWithPandoc(content, fromFormat, toFormat string) (Epub, error)
 	return output, nil
 }
 
-func GenerateHTML(title, body string) string {
-	return fmt.Sprintf(`<!DOCTYPE html>
+func GenerateHTML(title, body string) HTML {
+	return HTML(fmt.Sprintf(`<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,5 +40,5 @@ func GenerateHTML(title, body string) string {
 <body>
     %s
 </body>
-</html>`, title, body)
+</html>`, title, body))
 }
