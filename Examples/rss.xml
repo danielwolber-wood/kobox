@@ -1,0 +1,27 @@
+<rss version="2.0">
+    <channel>
+        <title>Upgrade</title>
+        <link>https://www.relay.fm/upgrade</link>
+        <pubDate>Mon, 19 May 2025 21:15:00 GMT</pubDate>
+        <description>Upgrade looks at how technology shapes our lives, from the devices in our hands and pockets to the streaming services that keep us entertained. Hosted by Jason Snell and Myke Hurley.</description>
+        <language>en-US</language>
+        <copyright>Copyright © 2025 Relay FM, LLC</copyright>
+
+        <item>
+            <title>564: California CarPlay Road Trip</title>
+            <description/>
+            <pubDate>Mon, 19 May 2025 21:15:00 GMT</pubDate>
+            <enclosure url="https://www.podtrac.com/pts/redirect.mp3/mgln.ai/e/613/traffic.libsyn.com/secure/upgrade/upgrade564.mp3" length="117394919" type="audio/mp3"/>
+            <link>http://relay.fm/upgrade/564</link>
+            <guid>http://relay.fm/upgrade/564</guid>
+        </item>
+        <item>
+            <title>563: Peanut or a Banana</title>
+            <description/>
+            <pubDate>Mon, 12 May 2025 21:15:00 GMT</pubDate>
+            <enclosure url="https://www.podtrac.com/pts/redirect.mp3/mgln.ai/e/613/traffic.libsyn.com/secure/upgrade/upgrade563.mp3" length="115740095" type="audio/mp3"/>
+            <link>http://relay.fm/upgrade/563</link>
+            <guid>http://relay.fm/upgrade/563</guid>
+    </item>
+</channel>
+</rss>

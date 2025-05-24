@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0"><head><title>Overcast Podcast Subscriptions</title>
+</head>
+    <body><outline text="feeds">
+        <outline type="rss" text="Roderick on the Line" xmlUrl="http://feeds.feedburner.com/RoderickOnTheLine" applePodcastsID="471418144"/><outline type="rss" text="The Talk Show With John Gruber" xmlUrl="https://daringfireball.net/thetalkshow/rss" applePodcastsID="528458508"/>
+        <outline type="rss" text="Robot or Not?" xmlUrl="https://feeds.theincomparable.com/robot" applePodcastsID="997930288"/>
+        <outline type="rss" text="Thoroughly Considered" xmlUrl="https://www.relay.fm/tc/feed" applePodcastsID="1041995154"/>
+        <outline type="rss" text="Fall of Civilizations Podcast" xmlUrl="https://anchor.fm/s/101adcf44/podcast/rss" applePodcastsID="1449884495"/>
+    </outline>
+    </body>
+</opml>
