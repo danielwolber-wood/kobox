@@ -66,6 +66,20 @@ func ParseOPMLFile(filename string) (*OPML, error) {
 	return ParseOPMLFromReader(file)
 }
 
+func (opml *OPML) Save(filename string) error {
+	file, err := os.Create(filename)
+	defer file.Close()
+	if err != nil {
+		return err
+	}
+	data, err := xml.Marshal(opml)
+	if err != nil {
+		return err
+	}
+	_, err = file.Write(data)
+	return err
+}
+
 func (outline *Outline) ExtractFeeds() []Outline {
 	var feeds []Outline
 	if outline.XMLUrl != "" {
