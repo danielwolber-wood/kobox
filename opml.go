@@ -98,6 +98,6 @@ func (opml *OPML) AddFeedFromOutline(outline Outline) {
 }
 
 func (opml *OPML) AddFeed(title, url, feedType string) {
-	outline := Outline{Text: title, Type: feedType, XMLUrl: url, Outlines: []Outline}
+	outline := Outline{Text: title, Type: feedType, XMLUrl: url, Outlines: []Outline{}}
 	opml.AddFeedFromOutline(outline)
 }
