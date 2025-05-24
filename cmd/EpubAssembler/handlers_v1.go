@@ -31,7 +31,7 @@ func (s *Server) handleReadabilityURL(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) handleAssembler(w http.ResponseWriter, r *http.Request) {
 	// accepts a readabilityResult JSON and returns epub
-	var readabilityResult ReadabilityResult
+	var readabilityResult ReadabilityObject
 	decoder := json.NewDecoder(r.Body)
 	defer r.Body.Close()
 	err := decoder.Decode(&readabilityResult)
@@ -39,7 +39,7 @@ func (s *Server) handleAssembler(w http.ResponseWriter, r *http.Request) {
 		response.WriteError(w, http.StatusBadRequest, fmt.Sprintf("cannot parse json: %v\n", err))
 		return
 	}
-	// accepts a ReadabilityResult and returns a .EPUB
+	// accepts a ReadabilityObject and returns a .EPUB
 	html := GenerateHTML(readabilityResult.Title, readabilityResult.Content)
 	epubData, err := ConvertStringWithPandoc(html, "html", "epub")
 	if err != nil {
