@@ -11,16 +11,6 @@ import (
 	"github.com/dop251/goja"
 )
 
-type ReadabilityObject struct {
-	Title   string `json:"title"`
-	Content string `json:"content"`
-	Excerpt string `json:"excerpt"`
-}
-
-type ReadabilityParser struct {
-	vm *goja.Runtime
-}
-
 func NewReadabilityParser() (*ReadabilityParser, error) {
 	vm := goja.New()
 

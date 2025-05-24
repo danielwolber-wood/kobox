@@ -6,8 +6,6 @@ import (
 	"strings"
 )
 
-type Epub []byte
-
 func ConvertFileWithPandoc(inputFile, outputFile, fromFormat, toFormat string) error {
 	cmd := exec.Command("pandoc",
 		"-f", fromFormat,
