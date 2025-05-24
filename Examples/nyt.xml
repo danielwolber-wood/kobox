@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; World News</title>
+    <link>https://www.nytimes.com/section/world</link>
+    <atom:link href="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description></description>
+    <language>en-us</language>
+    <copyright>Copyright 2025 The New York Times Company</copyright>
+    <lastBuildDate>Sat, 24 May 2025 11:12:22 +0000</lastBuildDate>
+    <pubDate>Sat, 24 May 2025 10:01:38 +0000</pubDate>
+    <image>
+      <title>NYT &gt; World News</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/world</link>
+    </image>
+    <item>
+      <title>Europe’s Been Negotiating by the Book, but Trump’s Tearing It Up</title>
+      <link>https://www.nytimes.com/2025/05/24/world/europe/europe-trade-trump-50-percent-threat.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/europe/europe-trade-trump-50-percent-threat.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/europe/europe-trade-trump-50-percent-threat.html" rel="standout"></atom:link>
+      <description>The Trump administration sees tariff talks as a chance to pressure a rival into concessions. E.U. officials have acted as though they were dealing with an ally.</description>
+      <dc:creator>Jeanna Smialek</dc:creator>
+      <pubDate>Sat, 24 May 2025 04:01:14 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Trade and World Market</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Customs (Tariff)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Union</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brussels (Belgium)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23europe-1-vhpk/23europe-1-vhpk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Sean Gallup/Getty Images</media:credit>
+      <media:description>Nearly $5 billion in goods and services cross the Atlantic between the United States and European Union every single day, by E.U. estimates.</media:description>
+    </item>
+    <item>
+      <title>In the Midst of War, a Tale of Hot Dogs</title>
+      <link>https://www.nytimes.com/2025/05/24/world/europe/ukraine-hot-dogs.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/europe/ukraine-hot-dogs.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/europe/ukraine-hot-dogs.html" rel="standout"></atom:link>
+      <description>Nathan’s Famous has found a foothold in Ukraine, a hot dog-loving country.</description>
+      <dc:creator>Kim Barker</dc:creator>
+      <pubDate>Sat, 24 May 2025 09:00:19 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hot Dogs and Frankfurters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Nathans Famous Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Socar</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Coney Island (Brooklyn, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Ukraine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/XXint-ukraine-hotdogs-dispatch-01-fqlk/XXint-ukraine-hotdogs-dispatch-01-fqlk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Brendan Hoffman for The New York Times</media:credit>
+      <media:description>Alisa Dombrovska preparing a Nathan’s hot dog at the flagship store of the Ukrainian gas station chain Socar in Kyiv last month.</media:description>
+    </item>
+    <item>
+      <title>Hong Kong’s Famous Bamboo Scaffolding Hangs On (for Now)</title>
+      <link>https://www.nytimes.com/2025/05/24/world/asia/hongkong-bamboo-scaffolding.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/asia/hongkong-bamboo-scaffolding.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/asia/hongkong-bamboo-scaffolding.html" rel="standout"></atom:link>
+      <description>Metal has begun to replace this distinctive latticework, which is seen on towers across the city. Daisy Pak, a rare female bamboo master, takes pride in the ancient craft.</description>
+      <dc:creator>Tiffany May and Lam Yik Fei</dc:creator>
+      <pubDate>Sat, 24 May 2025 04:01:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hong Kong</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Building (Construction)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Labor and Jobs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Accidents and Safety</category>
+      <media:content height="1080" medium="image" url="https://static01.nyt.com/images/2025/05/08/00int-hk-bamboo-6664-cover/00int-hk-bamboo-6664-cover-mediumSquareAt3X.jpg" width="1080"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+    </item>
+    <item>
+      <title>How an Iconic Blouse Became the Center of a Political Tussle in Romania</title>
+      <link>https://www.nytimes.com/2025/05/24/world/europe/romania-blouse-nationalist-politics.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/europe/romania-blouse-nationalist-politics.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/europe/romania-blouse-nationalist-politics.html" rel="standout"></atom:link>
+      <description>Nationalists in Romania have adopted an item of clothing traditionally worn by villagers, particularly women. Liberals say it’s an appropriation of a cultural identity that belongs to everyone.</description>
+      <dc:creator>Andrew Higgins</dc:creator>
+      <pubDate>Sat, 24 May 2025 09:00:59 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fashion and Apparel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Louis Vuitton</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Yves Saint Laurent</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Georgescu, Calin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Simion, George (1986- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Romania</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-romania-blouse-01-vgmh/23int-romania-blouse-01-vgmh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Andreea Campeanu for The New York Times</media:credit>
+      <media:description>Embroidering traditional blouses this month in Domnesti, a village near the Romanian capital, Bucharest.</media:description>
+    </item>
+    <item>
+      <title>As Trump Demands More Military Spending, NATO Allies Reconsider What Counts</title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/nato-spending-trump-5-percent.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/nato-spending-trump-5-percent.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/nato-spending-trump-5-percent.html" rel="standout"></atom:link>
+      <description>The president has long pressed European allies to pay more for their own security. So they may redefine what qualifies as security.</description>
+      <dc:creator>Lara Jakes and Steven Erlanger</dc:creator>
+      <pubDate>Fri, 23 May 2025 14:47:07 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cyberwarfare and Defense</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">North Atlantic Treaty Organization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rutte, Mark</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-nato-spending01-photo-tkgc/23int-nato-spending01-photo-tkgc-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Sean Gallup/Getty Images</media:credit>
+      <media:description>Lithuanian soldiers participating in NATO military exercises at an American facility in Hohenfels, Germany, in March.</media:description>
+    </item>
+    <item>
+      <title>In Attacks on Harvard, Chinese See Yet Another Reason to Write Off the U.S.</title>
+      <link>https://www.nytimes.com/2025/05/23/world/asia/harvard-china-trump.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/asia/harvard-china-trump.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/asia/harvard-china-trump.html" rel="standout"></atom:link>
+      <description>Beyond the shock for students, President Trump’s moves against higher education are being seen in China as a blow to one of the last admirable American institutions.</description>
+      <dc:creator>Vivian Wang</dc:creator>
+      <pubDate>Fri, 23 May 2025 07:57:04 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Harvard University</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Foreign Students (in US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Study and Teaching</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Colleges and Universities</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Xi Jinping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Visas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Academic Freedom</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Executive Orders and Memorandums</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-china-harvard-01-twjk/23int-china-harvard-01-twjk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Sophie Park for The New York Times</media:credit>
+      <media:description>The Harvard University campus in Cambridge, Mass., in April. American schools like Harvard have remained attractive to Chinese students, who were willing to overlook other concerns for the promise of a best-in-the-world education.</media:description>
+    </item>
+    <item>
+      <title>Syrians Rush to Preserve Remembrances of a Painful Revolution</title>
+      <link>https://www.nytimes.com/2025/05/23/world/middleeast/syrians-preserve-revolution-artifacts.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/middleeast/syrians-preserve-revolution-artifacts.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/middleeast/syrians-preserve-revolution-artifacts.html" rel="standout"></atom:link>
+      <description>Many in Syria want to enshrine remnants of their recent history, not only to remember it, but as a cautionary tale.</description>
+      <dc:creator>Raja Abdulrahim</dc:creator>
+      <pubDate>Fri, 23 May 2025 09:00:34 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Sednaya Prison (Syria)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">War and Armed Conflicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Archives and Records</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Assad, Bashar al-</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Assad, Hafez al-</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-syria-artifacts-01-gqck/22int-syria-artifacts-01-gqck-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Kiana Hayeri for The New York Times</media:credit>
+      <media:description>Preserving posters and banners from the uprising against the dictator Bashar al-Assad in the northwestern town of Kafranbel, Syria.</media:description>
+    </item>
+    <item>
+      <title>At an Uncertain Moment for Germany, Suddenly Boring Doesn’t Look So Bad</title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/germany-bielefeld-boring.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/germany-bielefeld-boring.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/germany-bielefeld-boring.html" rel="standout"></atom:link>
+      <description>The small city of Bielefeld was once the butt of jokes for its blandness. Now it embodies the kind of stability Germans long for.</description>
+      <dc:creator>Clay Risen</dc:creator>
+      <pubDate>Fri, 23 May 2025 18:53:02 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Urban Areas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Minorities</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Soccer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Disabilities</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Autism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Bielefeld (Germany)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Germany</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/int-germany-bielefeld-01-vqwm/int-germany-bielefeld-01-vqwm-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Sergey Ponomarev for The New York Times</media:credit>
+      <media:description>The main shopping street in Bielefeld, Germany, this week.</media:description>
+    </item>
+    <item>
+      <title>Knife Attack at Train Station in Hamburg, Germany, Wounds at Least 17</title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/hamburg-germany-knife-attack.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/hamburg-germany-knife-attack.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/hamburg-germany-knife-attack.html" rel="standout"></atom:link>
+      <description>Four of the victims are in critical condition. The police say they believe a 39-year-old woman carried out the attack, for which no motive has yet been given.</description>
+      <dc:creator>Eve Sampson, Christopher F. Schuetze and Clay Risen</dc:creator>
+      <pubDate>Fri, 23 May 2025 23:15:15 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Hamburg (Germany)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Germany</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Assaults</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stations and Terminals (Passenger)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-germany-stabbing-photo-vwhf/23int-germany-stabbing-photo-vwhf-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Jonas Walzberg/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Forensic police officers investigating a railway platform in Hamburg, Germany, the site of a knife attack in which at least 17 people were injured on Friday.</media:description>
+    </item>
+    <item>
+      <title>Paris Court Convicts Eight in 2016 Robbery of Kim Kardashian</title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/kim-kardashian-paris-robbery-trial-verdict.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/kim-kardashian-paris-robbery-trial-verdict.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/kim-kardashian-paris-robbery-trial-verdict.html" rel="standout"></atom:link>
+      <description>The reality TV star, who was held at gunpoint as jewelry worth millions was stolen from her, said she was satisfied by the ruling.</description>
+      <dc:creator>Aurelien Breeden</dc:creator>
+      <pubDate>Fri, 23 May 2025 20:47:09 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kardashian, Kim</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Paris (France)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Robberies and Thefts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Decisions and Verdicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Reality Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Media</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-france-kardashian-trial-wfhz/23int-france-kardashian-trial-wfhz-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Leo Vignal/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Kim Kardashian, center in black, was accompanied by her mother, Kris Jenner, after Ms. Kardashian testified in a Paris court earlier this month.</media:description>
+    </item>
+    <item>
+      <title>American Emigration to Britain Rises </title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/americans-british-citizenship-applications-record.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/americans-british-citizenship-applications-record.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/americans-british-citizenship-applications-record.html" rel="standout"></atom:link>
+      <description>New data from the U.K. government showed applications surged in the first three months of this year, which some analysts attributed to the political climate in the United States.</description>
+      <dc:creator>Lizzie Dearden</dc:creator>
+      <pubDate>Sat, 24 May 2025 00:33:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Citizenship and Naturalization</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">England</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Immigration and Emigration</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-uk-us-photo-jvqb/23int-uk-us-photo-jvqb-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Andrew Testa for The New York Times</media:credit>
+      <media:description>Pedestrians crossing a bridge across the River Thames in London. Immigration lawyers said they had received an increasing number of inquiries in recent months from people in the United States about possibly relocating to Britain.</media:description>
+    </item>
+    <item>
+      <title>Ukraine and Russia Begin Largest Exchange of Prisoners of War</title>
+      <link>https://www.nytimes.com/2025/05/23/world/europe/ukraine-russia-prisoner-swap.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/europe/ukraine-russia-prisoner-swap.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/europe/ukraine-russia-prisoner-swap.html" rel="standout"></atom:link>
+      <description>Each side reported that 390 of its people had been returned, and more swaps are expected this weekend.</description>
+      <dc:creator>Marc Santora and Constant Méheut</dc:creator>
+      <pubDate>Sat, 24 May 2025 00:31:00 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prisoners of War</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Ukraine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Putin, Vladimir V</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Zelensky, Volodymyr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/23/world/23ukraine-russia-prisoner-swap/23ukraine-russia-prisoner-swap-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Brendan Hoffman for The New York Times</media:credit>
+      <media:description>Olena Nehir with her husband, Oleksandr Nehir, a Ukrainian prisoner of war who was released from Russian captivity on Friday in the Chernihiv region of Ukraine.</media:description>
+    </item>
+    <item>
+      <title>Bangladesh’s Leader Threatens to Resign Over Election Pressure</title>
+      <link>https://www.nytimes.com/2025/05/23/world/asia/bangladesh-leader-yusuf-threat.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/asia/bangladesh-leader-yusuf-threat.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/asia/bangladesh-leader-yusuf-threat.html" rel="standout"></atom:link>
+      <description>Muhammad Yunus has struggled to navigate between the army, career politicians and the protest movement that overthrew the country’s authoritarian leader last year.</description>
+      <dc:creator>Saif Hasnat</dc:creator>
+      <pubDate>Fri, 23 May 2025 14:04:20 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Bangladesh</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Yunus, Muhammad</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Islam, Nahid</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wazed, Hasina</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Bangladesh Nationalist Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Bangladesh Awami League</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">National Citizens Party (Bangladesh)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23INT-BANGLADESH-YUNUS-mqfv/23INT-BANGLADESH-YUNUS-mqfv-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Atul Loke for The New York Times</media:credit>
+      <media:description>Muhammad Yunus at his temporary office at Jamuna State Guest House in Dhaka, last year.</media:description>
+    </item>
+    <item>
+      <title>South Africa Sets the Stage for Starlink Approval</title>
+      <link>https://www.nytimes.com/2025/05/23/world/africa/south-africa-elon-musk-trump-starlink-white-house.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/africa/south-africa-elon-musk-trump-starlink-white-house.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/africa/south-africa-elon-musk-trump-starlink-white-house.html" rel="standout"></atom:link>
+      <description>A proposed regulatory change would allow Elon Musk’s satellite company and others like it to get a license without having to sell shares to Black South Africans.</description>
+      <dc:creator>John Eligon</dc:creator>
+      <pubDate>Fri, 23 May 2025 19:59:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Africa</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramaphosa, Cyril</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Musk, Elon</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Economic Freedom Fighters (South Africa)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Starlink Satellite Constellation (SpaceX)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Satellites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Apartheid (Policy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Regulation and Deregulation of Industry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Minorities</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Race and Ethnicity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Law and Legislation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rumors and Misinformation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whites</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-starlink01-photo-zpmb/23int-starlink01-photo-zpmb-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>Elon Musk at the White House in April.</media:description>
+    </item>
+    <item>
+      <title>Working Out</title>
+      <link>https://www.nytimes.com/2025/05/24/briefing/working-out.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/briefing/working-out.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/briefing/working-out.html" rel="standout"></atom:link>
+      <description>Reorganizing your week just might make it possible to reorient your relationship with time.</description>
+      <dc:creator>Melissa Kirsch</dc:creator>
+      <pubDate>Sat, 24 May 2025 10:01:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">internal-storyline-no</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Work-Life Balance</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Workplace Environment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Working Hours</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Social Conditions and Trends</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Mental Health and Disorders</category>
+    </item>
+    <item>
+      <title>Canada’s Central Banker on Economic Turmoil and Diversifying Trade</title>
+      <link>https://www.nytimes.com/2025/05/24/world/canada/canadas-central-banker-on-economic-turmoil-and-diversifying-trade.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/canada/canadas-central-banker-on-economic-turmoil-and-diversifying-trade.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/canada/canadas-central-banker-on-economic-turmoil-and-diversifying-trade.html" rel="standout"></atom:link>
+      <description>We spoke with Tiff Macklem, the governor of the Bank of Canada, after a meeting of top economic policymakers in Alberta.</description>
+      <dc:creator>Ian Austen</dc:creator>
+      <pubDate>Sat, 24 May 2025 10:00:07 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Canada</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Macklem, Tiff</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Trade and World Market</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Customs (Tariff)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Economic Conditions and Trends</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/24/multimedia/24canadaleter-macklem-wzgl/24canadaleter-macklem-wzgl-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Cole Burston//Agence France-Presse — Getty Images</media:credit>
+      <media:description>Tiff Macklem, the governor of the Bank of Canada, said uncertainty over tariffs was freezing investment.</media:description>
+    </item>
+    <item>
+      <title>Russia and Ukraine Exchange Air Assaults Amid Major Prisoner Swap</title>
+      <link>https://www.nytimes.com/2025/05/24/world/europe/ukraine-russia-prisoner-swap.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/24/world/europe/ukraine-russia-prisoner-swap.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/24/world/europe/ukraine-russia-prisoner-swap.html" rel="standout"></atom:link>
+      <description>The hourslong raids, involving hundreds of drones, were a reminder that any diplomatic resolution to the conflict remains far off.</description>
+      <dc:creator>Constant Méheut</dc:creator>
+      <pubDate>Sat, 24 May 2025 09:46:01 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Drones (Pilotless Planes)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Peace Process</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Missiles and Missile Defense Systems</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prisons and Prisoners</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prisoners of War</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/24/multimedia/24int-ukraine-attacks-qflg/24int-ukraine-attacks-qflg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Thomas Peter/Reuters</media:credit>
+      <media:description>An apartment building damaged during a drone attack in Kyiv on Saturday. The Ukrainian capital was the Russian air assault’s main target.</media:description>
+    </item>
+    <item>
+      <title>Teachers Protest in Mexico City Shuts Down Airport</title>
+      <link>https://www.nytimes.com/2025/05/23/world/americas/mexico-city-teachers-protest-airport-shutdown.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/americas/mexico-city-teachers-protest-airport-shutdown.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/americas/mexico-city-teachers-protest-airport-shutdown.html" rel="standout"></atom:link>
+      <description>Flights were briefly halted, delaying travel for thousands, as security forces swarmed into passenger terminals in an effort to assert order.</description>
+      <dc:creator>Simon Romero and Emiliano Rodríguez Mega</dc:creator>
+      <pubDate>Fri, 23 May 2025 23:21:18 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mexico City (Mexico)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Demonstrations, Protests and Riots</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Teachers and School Employees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Airports</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Organized Labor</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Wages and Salaries</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sheinbaum, Claudia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Aeromexico</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Delays (Transportation)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mexico</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal Budget (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Workplace Hazards and Violations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Airlines and Airplanes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Elections</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-mexico-airport-protest-photo-gktl/23int-mexico-airport-protest-photo-gktl-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Henry Romero/Reuters</media:credit>
+      <media:description>Protesters at Mexico City’s international airport blocking a terminal on Friday.</media:description>
+    </item>
+    <item>
+      <title>Trump Signs Executive Orders for Faster Build-Out of Nuclear Power Plants</title>
+      <link>https://www.nytimes.com/2025/05/23/climate/trump-executive-order-nuclear-power.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/climate/trump-executive-order-nuclear-power.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/climate/trump-executive-order-nuclear-power.html" rel="standout"></atom:link>
+      <description>Among a flurry of executive actions, Mr. Trump directed the nation’s nuclear safety regulator to speed up approvals for new reactors.</description>
+      <dc:creator>Brad Plumer</dc:creator>
+      <pubDate>Sat, 24 May 2025 03:29:50 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Executive Orders and Memorandums</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Energy Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Global Warming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Greenhouse Gas Emissions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Nuclear Energy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Regulation and Deregulation of Industry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Electric Light and Power</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Alternative and Renewable Energy</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23cli-nuclear-01-tvfh/23cli-nuclear-01-tvfh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Megan Varner/Reuters</media:credit>
+      <media:description>A cooling tower is seen at the nuclear-powered Vogtle Electric Generating Plant in Waynesboro, Ga.</media:description>
+    </item>
+    <item>
+      <title>Lebanon Moves to Disarm Palestinian Groups, a Test Run for Hezbollah</title>
+      <link>https://www.nytimes.com/2025/05/23/world/middleeast/lebanon-hezbollah-palestinian-refugee-camps.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/middleeast/lebanon-hezbollah-palestinian-refugee-camps.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/middleeast/lebanon-hezbollah-palestinian-refugee-camps.html" rel="standout"></atom:link>
+      <description>After war with Israel weakened Iran-backed militias across the Middle East, including the Lebanese group Hezbollah, Lebanon’s government has moved to assert its authority over armed groups.</description>
+      <dc:creator>Vivian Yee, Dayana Iwaza and Hwaida Saad</dc:creator>
+      <pubDate>Fri, 23 May 2025 19:08:23 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Palestinians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Iran-Israel Proxy Conflict</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Fatah, Al</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Hamas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Hezbollah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Palestinian Islamic Jihad</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Abbas, Mahmoud</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Aoun, Joseph (1964- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Salam, Nawaf</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Beirut (Lebanon)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Iran</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Israel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Lebanon</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Middle East</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Syria</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23int-lebanon-palestinians-1-bltj/23int-lebanon-palestinians-1-bltj-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Mohamed Azakir/Reuters</media:credit>
+      <media:description>At the Burj al-Barajneh Palestinian refugee camp in Beirut, Lebanon this week. More than 200,000 Palestinian refugees live in Lebanon, according to the United Nations agency that serves Palestinian refugees.</media:description>
+    </item>
+    <item>
+      <title>Sebastião Salgado, Acclaimed Brazilian Photographer, Is Dead at 81</title>
+      <link>https://www.nytimes.com/2025/05/23/arts/sebastiao-salgado-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/arts/sebastiao-salgado-dead.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/arts/sebastiao-salgado-dead.html" rel="standout"></atom:link>
+      <description>Known for his powerfully impactful images of nature and the human condition, he was widely regarded as one of the most important documentary photographers of his time.</description>
+      <dc:creator>Ana Ionova</dc:creator>
+      <pubDate>Sat, 24 May 2025 05:32:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Salgado, Sebastiao</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Photography</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brazil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Poverty</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Forests and Forestry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">vis-photo</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23Salgado-obit-sub-qchj/23Salgado-obit-sub-qchj-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Kevin Scanlon for The New York Times</media:credit>
+      <media:description>The photographer Sebastião Salgado in 2009.</media:description>
+    </item>
+    <item>
+      <title>Historic Shipwrecks Come to Light in the Great Lakes</title>
+      <link>https://www.nytimes.com/2025/05/23/science/archaeology-lake-ontario-shipwrecks.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/science/archaeology-lake-ontario-shipwrecks.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/science/archaeology-lake-ontario-shipwrecks.html" rel="standout"></atom:link>
+      <description>With an underwater drone named Rhody, archaeologists are mapping some of the dozens of sunken vessels in Lake Ontario.</description>
+      <dc:creator>Alexander Nazaryan</dc:creator>
+      <pubDate>Fri, 23 May 2025 18:12:25 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Shipwrecks (Historic)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ships and Shipping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Wildlife Sanctuaries and Nature Reserves</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sailboats and Sailing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Diving and Divers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conservation of Resources</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Environmental Protection Agency</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Lake Ontario</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Oswego (NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York State</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Lakes</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23SCI-SHIPWRECKS-04-bwkz/23SCI-SHIPWRECKS-04-bwkz-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>NOAA Office of National Marine Sanctuaries / OECI </media:credit>
+      <media:description>The bow of the Phillip Becker, covered in quagga mussels.</media:description>
+    </item>
+    <item>
+      <title>Yuri Grigorovich Dead: Soviet Ballet Choreographer Was 98</title>
+      <link>https://www.nytimes.com/2025/05/23/arts/dance/yuri-grigorivich-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/arts/dance/yuri-grigorivich-dead.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/arts/dance/yuri-grigorivich-dead.html" rel="standout"></atom:link>
+      <description>Among the 20th century’s most significant choreographers, he led the Bolshoi Ballet for more than 30 years, creating epic ballets like “Spartacus.”</description>
+      <dc:creator>Brian Seibert</dc:creator>
+      <pubDate>Fri, 23 May 2025 19:27:19 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Grigorovich, Yuri</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Dancing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Bolshoi Ballet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Bolshoi Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Kirov Ballet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Mariinsky Ballet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Spartacus (Ballet)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/25/obituaries/21grigorovich-1-print3/21grigorovich-1-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Nikolay Vinokurov/Alamy Live News</media:credit>
+      <media:description>Yuri Grigorovich at the Bolshoi Theater in Moscow in 2017. As the artistic director of the Bolshoi Ballet from 1964 to 1995, he reshaped late-Soviet-era dance.</media:description>
+    </item>
+    <item>
+      <title>Trump Threatens 50% Tariff on E.U. and 25% Tariff on Apple</title>
+      <link>https://www.nytimes.com/2025/05/23/us/politics/trump-tariffs-eu-apple.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/us/politics/trump-tariffs-eu-apple.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/us/politics/trump-tariffs-eu-apple.html" rel="standout"></atom:link>
+      <description>The president threatened both Apple and the European Union with higher tariffs on Friday, saying trade talks with the Europeans had stalled.</description>
+      <dc:creator>Ana Swanson, Jeanna Smialek and Adam Satariano</dc:creator>
+      <pubDate>Fri, 23 May 2025 20:31:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Customs (Tariff)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Trade and World Market</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Protectionism (Trade)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Apple Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Union</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23DC-trump-tariffs-topart-cflp/23DC-trump-tariffs-topart-cflp-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Ingmar Nolting for The New York Times</media:credit>
+      <media:description>A Volkswagen factory in Zwickau, Germany. President Trump had paused heavy tariffs on countries around the world until July, but he announced on Friday that he was recommending a 50 percent tariff on imports from the European Union.</media:description>
+    </item>
+    <item>
+      <title>How to Understand Trump’s Latest Deportation Tactics</title>
+      <link>https://www.nytimes.com/2025/05/23/world/how-to-understand-trumps-latest-deportation-tactics.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/world/how-to-understand-trumps-latest-deportation-tactics.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/world/how-to-understand-trumps-latest-deportation-tactics.html" rel="standout"></atom:link>
+      <description>This week saw a dramatic court showdown and a mysterious flight to Djibouti.</description>
+      <dc:creator>Amanda Taub</dc:creator>
+      <pubDate>Fri, 23 May 2025 11:37:11 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deportation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Courts and the Judiciary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Homeland Security Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Murphy, Brian E (1979- )</category>
+      <media:content height="1802" medium="image" url="https://static01.nyt.com/images/2025/05/23/multimedia/23interpreter-deportations-1-cvbt/23interpreter-deportations-1-cvbt-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Ivor Prickett for The New York Times</media:credit>
+      <media:description>Juba international airport in South Sudan, last year.</media:description>
+    </item>
+    <item>
+      <title>In ‘Cancer Alley,’ a Battle Over Who Gets to Measure Air Pollution</title>
+      <link>https://www.nytimes.com/2025/05/23/climate/cancer-alley-air-pollution-free-speech.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/climate/cancer-alley-air-pollution-free-speech.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/climate/cancer-alley-air-pollution-free-speech.html" rel="standout"></atom:link>
+      <description>Community groups are fighting an unusual Louisiana law that restricts how they use data from air-quality monitors, saying it violates free speech.</description>
+      <dc:creator>Hiroko Tabuchi</dc:creator>
+      <pubDate>Fri, 23 May 2025 12:48:24 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Air Pollution</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Law and Legislation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sensors</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Hazardous and Toxic Substances</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Asthma</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Environment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fines (Penalties)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Freedom of Speech and Expression</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Poverty</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Louisiana</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Kentucky</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">West Virginia</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22cli-pollution-speech-01-hmpt/22cli-pollution-speech-01-hmpt-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Bryan Tarnowski for The New York Times</media:credit>
+      <media:description>A meeting of Rise St. James in 2023, a group leading an effort to use low-cost air pollution monitors.</media:description>
+    </item>
+    <item>
+      <title>New Studies Dismiss Signs of Life on Distant Planet</title>
+      <link>https://www.nytimes.com/2025/05/23/science/astronomy-extraterrestrial-life-k218b.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/science/astronomy-extraterrestrial-life-k218b.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/science/astronomy-extraterrestrial-life-k218b.html" rel="standout"></atom:link>
+      <description>In April, astronomers said they had detected a possible signature of life on the exoplanet K2-18b. Now, three independent analyses discount the evidence.</description>
+      <dc:creator>Carl Zimmer</dc:creator>
+      <pubDate>Fri, 23 May 2025 13:32:04 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">your-feed-science</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Extraterrestrial Life</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Space and Astronomy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Telescopes and Observatories</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Planets</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">James Webb Space Telescope</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Infrared Radiation</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/27/multimedia/23SCI-ALIENS-01-vljc/23SCI-ALIENS-01-vljc-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>EPA, via Shutterstock</media:credit>
+      <media:description>An artist’s concept of the exoplanet K2-18b, 120 light-years from Earth, whose atmosphere has been creating a stir in astronomical circles.</media:description>
+    </item>
+    <item>
+      <title>Friday Briefing</title>
+      <link>https://www.nytimes.com/2025/05/23/briefing/aides-israel-gaza-south-africa.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/23/briefing/aides-israel-gaza-south-africa.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/23/briefing/aides-israel-gaza-south-africa.html" rel="standout"></atom:link>
+      <description>Here’s what you need to know.</description>
+      <dc:creator>Natasha Frost</dc:creator>
+      <pubDate>Fri, 23 May 2025 04:58:38 +0000</pubDate>
+      <media:content height="1528" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/23ambriefing-asia-shooting/22dc-assassin-fctz-mediumSquareAt3X.jpg" width="1527"></media:content>
+      <media:credit>Caroline Gutman for The New York Times</media:credit>
+      <media:description>Outside the Capital Jewish Museum in Washington yesterday.</media:description>
+    </item>
+    <item>
+      <title>Trump Confirms Attempted Deportation of Migrants to South Sudan</title>
+      <link>https://www.nytimes.com/2025/05/22/us/politics/trump-deportations-south-sudan.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/us/politics/trump-deportations-south-sudan.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/us/politics/trump-deportations-south-sudan.html" rel="standout"></atom:link>
+      <description>The deportees are stuck in Djibouti amid a legal fight over their expulsions. A lawyer for some of the men said she was concerned for their health and welfare.</description>
+      <dc:creator>Hamed Aleaziz, Alan Feuer and Mattathias Schwartz</dc:creator>
+      <pubDate>Fri, 23 May 2025 01:10:50 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deportation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Illegal Immigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classified Information and State Secrets</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Homeland Security Department</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Murphy, Brian E (1979- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Federal Courts (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Immigration and Customs Enforcement (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Djibouti</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Sudan</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22dc-deport-fbvp/22dc-deport-fbvp-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Paul Ratje for The New York Times</media:credit>
+      <media:description>President Trump confirmed that a group of migrants from several countries were stuck in Djibouti on their way to being deported to South Sudan.</media:description>
+    </item>
+    <item>
+      <title>Cargo Ship Crashed Into Man’s Yard After Crewman Fell Asleep, Police Say</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/norway-ship-crash-backyard.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/norway-ship-crash-backyard.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/norway-ship-crash-backyard.html" rel="standout"></atom:link>
+      <description>A retiree living along a Norwegian fjord woke up on Thursday morning because his neighbor was pounding on his door, telling him to look outside. The ship just missed his house.</description>
+      <dc:creator>Henrik Pryser Libell</dc:creator>
+      <pubDate>Fri, 23 May 2025 18:50:13 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ships and Shipping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Norway</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Maritime Accidents and Safety</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-norway-ship01-photo-cmzp/22int-norway-ship01-photo-cmzp-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Jan Langhaug/NTB, via Agence France-Presse — Getty Images</media:credit>
+      <media:description>The bow of a cargo ship sits lodged into the ground beside a house in Byneset, Norway, on Thursday.</media:description>
+    </item>
+    <item>
+      <title>U.S. to Impose Sanctions on Sudan Over Use of Chemical Weapons</title>
+      <link>https://www.nytimes.com/2025/05/22/world/africa/us-sanctions-sudan-chemical-weapons.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/africa/us-sanctions-sudan-chemical-weapons.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/africa/us-sanctions-sudan-chemical-weapons.html" rel="standout"></atom:link>
+      <description>The State Department’s announcement comes months after U.S. officials found evidence that Sudan’s military had used chemical weapons against its paramilitary rival.</description>
+      <dc:creator>Declan Walsh</dc:creator>
+      <pubDate>Thu, 22 May 2025 22:44:51 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Sudan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Embargoes and Sanctions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Biological and Chemical Warfare</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">War and Armed Conflicts</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">War Crimes, Genocide and Crimes Against Humanity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">al-Burhan, Abdel Fattah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hamdan, Mohamed (Hemeti)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Fatalities)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Malnutrition</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Biden, Joseph R Jr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-sudan1-mqjk/22int-sudan1-mqjk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Ivor Prickett for The New York Times</media:credit>
+      <media:description>Sudanese armed forces during a military demonstration outside the city of Omdurman last year.</media:description>
+    </item>
+    <item>
+      <title>Netanyahu Names Maj. Gen. David Zini as New Domestic Spy Chief</title>
+      <link>https://www.nytimes.com/2025/05/22/world/middleeast/israel-netanyahu-shin-bet-zini.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/middleeast/israel-netanyahu-shin-bet-zini.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/middleeast/israel-netanyahu-shin-bet-zini.html" rel="standout"></atom:link>
+      <description>The appointment of Maj. Gen. David Zini to head Shin Bet, Israel’s domestic intelligence agency, still faces a fraught legal process.</description>
+      <dc:creator>Ephrat Livni</dc:creator>
+      <pubDate>Thu, 22 May 2025 22:15:39 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Espionage and Intelligence Services</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Appointments and Executive Changes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conflicts of Interest</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Netanyahu, Benjamin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Zini, David</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bar, Ronen (1965- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baharav-Miara, Gali</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Shin Bet</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Supreme Court of Israel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Israel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Gaza Strip</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Qatar</category>
+      <media:content height="1802" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-israel-shinbet-photo-bgzm/22int-israel-shinbet-photo-bgzm-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Pool photo by Ronen Zvulun</media:credit>
+      <media:description>Prime Minister Benjamin Netanyahu named Maj. Gen. David Zini as his pick to head Shin Bet, Israel’s domestic intelligence agency.</media:description>
+    </item>
+    <item>
+      <title>Friday Briefing: Two Israeli Embassy Staff Killed</title>
+      <link>https://www.nytimes.com/2025/05/22/briefing/israel-embassy-staff-killing-gaza-aid-alberta-canada-secession.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/briefing/israel-embassy-staff-killing-gaza-aid-alberta-canada-secession.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/briefing/israel-embassy-staff-killing-gaza-aid-alberta-canada-secession.html" rel="standout"></atom:link>
+      <description>Plus, books to look forward to.</description>
+      <dc:creator>Justin Porter</dc:creator>
+      <pubDate>Thu, 22 May 2025 21:00:06 +0000</pubDate>
+      <media:content height="1528" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/23ambriefing-asia-shooting/22dc-assassin-fctz-mediumSquareAt3X.jpg" width="1527"></media:content>
+      <media:credit>Caroline Gutman for The New York Times</media:credit>
+      <media:description>Outside the Capital Jewish Museum in Washington yesterday.</media:description>
+    </item>
+    <item>
+      <title>After More Than a Century in Skorts and Skirts, Ireland’s Camogie Allows Shorts</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/camogie-skorts-shorts-vote-ireland.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/camogie-skorts-shorts-vote-ireland.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/camogie-skorts-shorts-vote-ireland.html" rel="standout"></atom:link>
+      <description>A committee vote on Thursday approved a measure that would allow players in the women’s sport to choose between shorts or skorts during official play.</description>
+      <dc:creator>Ali Watkins</dc:creator>
+      <pubDate>Thu, 22 May 2025 20:34:56 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Uniforms</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Athletics and Sports</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Dress Codes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Ireland</category>
+      <category domain="">Camogie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22xp-camogie1/22xp-camogie1-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Piaras Ó Mídheach/Sportsfile, via Getty Images</media:credit>
+      <media:description>Niamh Hanniffy of Galway and Meabh Murphy of Cork wore skorts, the required uniform, during a final in Dublin last year.</media:description>
+    </item>
+    <item>
+      <title>Trump Makes False Genocide Claims. South Africans Respond With Humor.</title>
+      <link>https://www.nytimes.com/2025/05/22/world/africa/trump-false-genocide-claims-south-africans-respond-humor.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/africa/trump-false-genocide-claims-south-africans-respond-humor.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/africa/trump-false-genocide-claims-south-africans-respond-humor.html" rel="standout"></atom:link>
+      <description>The jokes mask a deep-seated anger over the legacy of apartheid and the inequality that many Black people say continues to define life in their country.</description>
+      <dc:creator>Lynsey Chutel and Zimasa Matiwane</dc:creator>
+      <pubDate>Fri, 23 May 2025 03:32:27 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Comedy and Humor</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anger (Emotion)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Apartheid (Policy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conspiracy Theories</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Immigration and Emigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramaphosa, Cyril</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Africa</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Discrimination</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22safrica-1-mjqc/22safrica-1-mjqc-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Phill Magakoe/Agence France-Presse — Getty Images</media:credit>
+      <media:description>A mother and a daughter watching a television broadcast of a bilateral meeting between President Cyril Ramaphosa of South Africa and President Trump, at their home in Silverton, Pretoria, South Africa, on Wednesday.</media:description>
+    </item>
+    <item>
+      <title>G7 Finance Ministers Show Unity in Support of Ukraine Against Russia</title>
+      <link>https://www.nytimes.com/2025/05/22/us/politics/g7-unity-ukraine-against-russia.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/us/politics/g7-unity-ukraine-against-russia.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/us/politics/g7-unity-ukraine-against-russia.html" rel="standout"></atom:link>
+      <description>Top economic officials avoided a condemnation of U.S. tariffs but committed to trying to reduce “economic policy uncertainty.”</description>
+      <dc:creator>Alan Rappeport</dc:creator>
+      <pubDate>Fri, 23 May 2025 02:39:06 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Embargoes and Sanctions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Commission</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Union</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Group of Seven</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bessent, Scott</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dombrovskis, Valdis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Banff (Alberta)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Kyiv (Ukraine)</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22dc-g7-fjtg/22dc-g7-fjtg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Cole Burston/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Finance ministers and central bankers of the Group of 7 nations continued to blame Russia for the war in Ukraine, despite some initial resistance from the United States at their meeting in Banff, Canada.</media:description>
+    </item>
+    <item>
+      <title>Who Is Julius Malema, the South African Politician in the White House Video?</title>
+      <link>https://www.nytimes.com/2025/05/22/world/africa/julius-malema-south-africa-white-house-video.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/africa/julius-malema-south-africa-white-house-video.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/africa/julius-malema-south-africa-white-house-video.html" rel="standout"></atom:link>
+      <description>President Trump surprised a South African delegation with a video montage of apartheid-era chants from Mr. Malema.</description>
+      <dc:creator>Eve Sampson</dc:creator>
+      <pubDate>Thu, 22 May 2025 18:15:47 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Africa</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Malema, Julius S</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Economic Freedom Fighters (South Africa)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">African National Congress</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Apartheid (Policy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Race and Ethnicity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramaphosa, Cyril</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Video Recordings, Downloads and Streaming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Musk, Elon</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Zuma, Jacob G</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mandela, Nelson</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-malema-whois01-photo-ktwz/22int-malema-whois01-photo-ktwz-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Joao Silva/The New York Times</media:credit>
+      <media:description>Julius Malema, leader of the Economic Freedom Fighters party, voting for the national assembly speaker in Cape Town, South Africa, in 2024.</media:description>
+    </item>
+    <item>
+      <title>Shooting Outside D.C. Jewish Museum Is Part of Global Surge in Antisemitism</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/shooting-dc-jewish-museum-antisemitism.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/shooting-dc-jewish-museum-antisemitism.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/shooting-dc-jewish-museum-antisemitism.html" rel="standout"></atom:link>
+      <description>Groups that monitor hate crimes said the Hamas attack in 2023 and the subsequent war had helped fuel tens of thousands of anti-Jewish incidents globally, including cases of verbal abuse and violence.</description>
+      <dc:creator>Michael D. Shear</dc:creator>
+      <pubDate>Fri, 23 May 2025 00:53:33 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Capital Jewish Museum</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Murders, Attempted Murders and Homicides</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anti-Semitism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Capital Jewish Museum Shooting (May 2025)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-antisemitism-global-topart-pljb/22dc-shooting-header-topart-pljb-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Allison Robbert for The New York Times</media:credit>
+      <media:description>The entrance to the Capital Jewish Museum in Washington was cordoned off after the killing of two Israeli Embassy employees on Wednesday.</media:description>
+    </item>
+    <item>
+      <title>Simon Mann, Mercenary Who Sought to Overthrow African Ruler, Dies at 72</title>
+      <link>https://www.nytimes.com/2025/05/22/world/africa/simon-mann-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/africa/simon-mann-dead.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/africa/simon-mann-dead.html" rel="standout"></atom:link>
+      <description>After Eton and a successful career in the British Army, he became the go-to guy for military coups, he said. The rewards (and risks) were enormous.</description>
+      <dc:creator>Adam Nossiter</dc:creator>
+      <pubDate>Thu, 22 May 2025 17:34:04 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mann, Simon</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coups D&#39;Etat and Attempted Coups D&#39;Etat</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Mercenaries and Private Military Contractors</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Oil (Petroleum) and Gasoline</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Obiang Mangue, Teodoro Nguema</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Equatorial Guinea</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Zimbabwe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/21/obituaries/21mann-portrait/21mann-portrait-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Chris Radburn/PA Images, via Getty Images</media:credit>
+      <media:description>Simon Mann in 2009, after being released from prison in Equatorial Guinea. He was the “most notorious and best paid mercenary of my generation,” he wrote in his memoir.</media:description>
+    </item>
+    <item>
+      <title>In Trump Era, Taiwan Defense Chief Says U.S. Still Is a Check on China</title>
+      <link>https://www.nytimes.com/2025/05/22/world/asia/trump-china-taiwan-security.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/asia/trump-china-taiwan-security.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/asia/trump-china-taiwan-security.html" rel="standout"></atom:link>
+      <description>Wellington Koo says the Trump administration has a shared interest in security in the region, but Taiwan must also ready its own forces for asymmetric warfare.</description>
+      <dc:creator>Amy Chang Chien, Chris Buckley and Meaghan Tobin</dc:creator>
+      <pubDate>Thu, 22 May 2025 23:01:31 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Taiwan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">United States</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Democratic Progressive Party (Taiwan)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Arms Trade</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/00int-taiwan-military-01-thgz/00int-taiwan-military-01-thgz-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Lam Yik Fei for The New York Times</media:credit>
+      <media:description>Wellington Koo, Taiwan’s defense minister.</media:description>
+    </item>
+    <item>
+      <title>Ukraine Fires Hundreds of Drones at Russia, Moscow Says</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/ukraine-russia-drones.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/ukraine-russia-drones.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/ukraine-russia-drones.html" rel="standout"></atom:link>
+      <description>One of the biggest barrages of the war targeted 10 Russian regions, including Moscow, according to the Ministry of Defense, but it was not clear how much damage the attack did.</description>
+      <dc:creator>Maria Varenikova</dc:creator>
+      <pubDate>Thu, 22 May 2025 16:53:37 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Drones (Pilotless Planes)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Russian Invasion of Ukraine (2022)</category>
+    </item>
+    <item>
+      <title>Forest Loss Around the World Hit a Record in 2024</title>
+      <link>https://www.nytimes.com/2025/05/22/climate/deforestation-wri-report.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/climate/deforestation-wri-report.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/climate/deforestation-wri-report.html" rel="standout"></atom:link>
+      <description>Forests around the world disappeared at a rate of 18 soccer fields every minute, a global survey found. Fires accounted for nearly half of the losses.</description>
+      <dc:creator>Hiroko Tabuchi and Harry Stevens</dc:creator>
+      <pubDate>Thu, 22 May 2025 21:09:31 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Global Warming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Greenhouse Gas Emissions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Forests and Forestry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Wildfires</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Carbon Dioxide</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Agriculture and Farming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Two Thousand Twenty Four</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Drought</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">World Resources Institute</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Amazon Jungle</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Congo, Democratic Republic of (Congo-Kinshasa)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22CLI-FOREST-LOSS-wkcp/22CLI-FOREST-LOSS-wkcp-mediumSquareAt3X-v3.jpg" width="1800"></media:content>
+      <media:credit>Eraldo Peres/Associated Press</media:credit>
+      <media:description>Fires spread through the Brasília National Park during the dry season last September in Brazil.</media:description>
+    </item>
+    <item>
+      <title>Inside a Harrowing, Hail-Damaged Flight: ‘We Thought It Was Our Last’</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/indigo-flight-hailstorm.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/indigo-flight-hailstorm.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/indigo-flight-hailstorm.html" rel="standout"></atom:link>
+      <description>When an IndiGo flight from New Delhi ran into a severe hailstorm, a passenger described several terrifying minutes: “They were calling their gods, we were calling our gods.”</description>
+      <dc:creator>Jenny Gross</dc:creator>
+      <pubDate>Fri, 23 May 2025 10:02:29 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Airlines and Airplanes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Weather</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Aviation Accidents, Safety and Disasters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Federal Aviation Administration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New Delhi (India)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">IndiGo</category>
+      <media:content height="724" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22xp-indigoflight-sdiu/22xp-indigoflight-sdiu-mediumSquareAt3X.jpg" width="724"></media:content>
+      <media:credit>Sheikh Samiullah</media:credit>
+      <media:description>As passengers deplaned from the IndiGo jet, they noticed the plane’s nose was severely damaged from the hail.</media:description>
+    </item>
+    <item>
+      <title>Gaza Aid Deliveries Begin After Days of Delays</title>
+      <link>https://www.nytimes.com/2025/05/22/world/gaza-aid-delays-israel.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/gaza-aid-delays-israel.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/gaza-aid-delays-israel.html" rel="standout"></atom:link>
+      <description>The U.N. said about 90 truckloads of supplies had begun to arrive at warehouses and other sites in the devastated territory. It was the first significant influx after a two-month Israeli blockade.</description>
+      <dc:creator>Aaron Boxerman and Rawan Sheikh Ahmad</dc:creator>
+      <pubDate>Thu, 22 May 2025 19:43:05 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Gaza Strip</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Palestinians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Humanitarian Aid</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Food Insecurity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">United Nations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Israel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/gaza-aid-cmkt/gaza-aid-cmkt-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eyad Baba/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Employees working inside a bakery in Deir el-Balah in the central Gaza Strip after Israel allowed limited humanitarian aid to enter the Palestinian territory on Thursday.</media:description>
+    </item>
+    <item>
+      <title>Kneecap Member Is Charged With Terror Offense Over Flag at London Concert</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/kneecap-charged-terrorism-hezbollah.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/kneecap-charged-terrorism-hezbollah.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/kneecap-charged-terrorism-hezbollah.html" rel="standout"></atom:link>
+      <description>A member of the Northern Irish rap group Kneecap was accused of illegally displaying a flag in support of Hezbollah. Kneecap denied the offense.</description>
+      <dc:creator>Isabella Kwai</dc:creator>
+      <pubDate>Thu, 22 May 2025 14:58:42 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Terrorism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Kneecap (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mo Chara (Rapper)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">London (England)</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22xp-kneecap-zlmh/22xp-kneecap-zlmh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Timothy O&#39;Connell for The New York Times</media:credit>
+      <media:description>Liam Og O Hannaidh, left, also known as Mo Chara, with fellow members of Kneecap last year. </media:description>
+    </item>
+    <item>
+      <title>Sarah Milgrim and Yaron Lischinsky Were Israeli Embassy Workers Killed in D.C. Shooting</title>
+      <link>https://www.nytimes.com/2025/05/22/world/middleeast/israel-embassy-dc-shooting-victims-sarah-milgrim-yaron-lischinsky.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/middleeast/israel-embassy-dc-shooting-victims-sarah-milgrim-yaron-lischinsky.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/middleeast/israel-embassy-dc-shooting-victims-sarah-milgrim-yaron-lischinsky.html" rel="standout"></atom:link>
+      <description>Sarah Milgrim and Yaron Lischinsky met while working at the Israeli Embassy in Washington, her father said. Mr. Lischinsky had just bought an engagement ring, an official said.</description>
+      <dc:creator>John Yoon, Isabel Kershner and Natan Odenheimer</dc:creator>
+      <pubDate>Fri, 23 May 2025 15:12:23 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Capital Jewish Museum Shooting (May 2025)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anti-Semitism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">American Jewish Committee</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Jews and Judaism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Washington (DC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Diplomatic Service, Embassies and Consulates</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Murders, Attempted Murders and Homicides</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Capital Jewish Museum</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Milgrim, Sarah Lynn (1998-2025)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lischinsky, Yaron (d 2025)</category>
+    </item>
+    <item>
+      <title>Kim Jong-un Vents Fury After Botched Launch of North Korean Destroyer</title>
+      <link>https://www.nytimes.com/2025/05/22/world/asia/north-korea-destroyer-accident.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/asia/north-korea-destroyer-accident.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/asia/north-korea-destroyer-accident.html" rel="standout"></atom:link>
+      <description>He vows to punish as criminals those responsible for the failure, in which the ship had its hull torn open and ended up on its side in the water.</description>
+      <dc:creator>Choe Sang-Hun</dc:creator>
+      <pubDate>Thu, 22 May 2025 16:45:20 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">North Korea</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kim Jong-un</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Defense and Military Forces</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Ships and Shipping</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Maritime Accidents and Safety</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Workers&#39; Party of Korea</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <media:content height="1798" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-nkorea-destroyer-bfwk/22int-nkorea-destroyer-bfwk-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Maxar Technologies, via Agence France-Presse — Getty Images</media:credit>
+      <media:description>A satellite image released by Maxar Technologies showed a new navy destroyer on Sunday, before its failed launch in Chongjin, North Korea.</media:description>
+    </item>
+    <item>
+      <title>Israelis, Stunned by D.C. Shooting, Fear Backlash Over Gaza War</title>
+      <link>https://www.nytimes.com/2025/05/22/world/middleeast/israelis-shooting-reaction.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/middleeast/israelis-shooting-reaction.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/middleeast/israelis-shooting-reaction.html" rel="standout"></atom:link>
+      <description>Political leaders pointed fingers at each other, suggesting that their opponents were responsible for a rise in antisemitism and criticism of Israel.</description>
+      <dc:creator>Aaron Boxerman</dc:creator>
+      <pubDate>Thu, 22 May 2025 18:15:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Capital Jewish Museum Shooting (May 2025)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Israel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anti-Semitism</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Israel-Gaza War (2023- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">American Jewish Committee</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Diplomatic Service, Embassies and Consulates</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Palestinians</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Gaza Strip</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Hamas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Murders, Attempted Murders and Homicides</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Capital Jewish Museum</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rodriguez, Elias (Capital Jewish Museum Shooting)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lischinsky, Yaron (d 2025)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Milgrim, Sarah Lynn (1998-2025)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-israel-reax-zghv/22int-israel-reax-zghv-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Allison Robbert for The New York Times</media:credit>
+      <media:description>Police officers outside the Capital Jewish Museum in Washington early on Thursday.</media:description>
+    </item>
+    <item>
+      <title>UK Net Migration Almost Halved in 2024, Data Shows</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/uk-net-migration-data.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/uk-net-migration-data.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/uk-net-migration-data.html" rel="standout"></atom:link>
+      <description>Net migration dropped by 50 percent in 2024, data showed Thursday. So why was the prime minister warning of an “island of strangers” earlier this month?</description>
+      <dc:creator>Mark Landler</dc:creator>
+      <pubDate>Fri, 23 May 2025 00:27:49 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Immigration and Emigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Illegal Immigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">European Union</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Labour Party (Great Britain)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Office for National Statistics (United Kingdom)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Starmer, Keir</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Europe</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22int-uk-immigration-01-zqbg/22int-uk-immigration-01-zqbg-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Kin Cheung/Associated Press</media:credit>
+      <media:description>Passengers arriving at Heathrow Airport near London in 2023. The government estimated that net migration had dropped by almost half in 2024 compared to 2023.</media:description>
+    </item>
+    <item>
+      <title>South Africa Wanted to Talk Trade. Then Trump Turned Down the Lights.</title>
+      <link>https://www.nytimes.com/2025/05/22/world/africa/south-africa-trump-oval-office-genocide.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/africa/south-africa-trump-oval-office-genocide.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/africa/south-africa-trump-oval-office-genocide.html" rel="standout"></atom:link>
+      <description>In a bruising Oval Office meeting, the visitors’ plan to keep President Trump from focusing on false accusations of white genocide backfired spectacularly.</description>
+      <dc:creator>John Eligon</dc:creator>
+      <pubDate>Thu, 22 May 2025 11:07:22 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Africa</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramaphosa, Cyril</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Apartheid (Policy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Race and Ethnicity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rumors and Misinformation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Trade and World Market</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Customs (Tariff)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22safrica-2-bwjh/22safrica-2-bwjh-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>Mr. Ramaphosa and Mr. Trump during their meeting on Wednesday.</media:description>
+    </item>
+    <item>
+      <title>Alberta Separatism Push Roils Canada</title>
+      <link>https://www.nytimes.com/2025/05/22/world/canada/alberta-separatism-referendum.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/canada/alberta-separatism-referendum.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/canada/alberta-separatism-referendum.html" rel="standout"></atom:link>
+      <description>The country is just emerging from a period of political turmoil with a new prime minister in place. But now Alberta, a conservative Western province, is planning a referendum to break away.</description>
+      <dc:creator>Vjosa Isai, Matina Stevis-Gridneff and Amber Bracken</dc:creator>
+      <pubDate>Fri, 23 May 2025 00:19:40 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Referendums</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Secession and Independence Movements</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Regulation and Deregulation of Industry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Oil (Petroleum) and Gasoline</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Natural Gas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Conservative Party (Canada)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Liberal Party (Canada)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Smith, Danielle (1971- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trudeau, Justin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Alberta (Canada)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Canada</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/19/multimedia/00int-canada-alberta-promo/00int-canada-alberta01-photo-lbmt-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Amber Bracken for The New York Times</media:credit>
+      <media:description>Trucks outside of Calgary, Alberta. The oil-rich province is home to a small but principled minority of separatists.</media:description>
+    </item>
+    <item>
+      <title>How ‘Daniel’ Led Our Reporters to an Assembly Line for Russian Spies</title>
+      <link>https://www.nytimes.com/video/world/americas/100000010164067/how-daniel-led-our-reporters-to-an-assembly-line-for-russian-spies.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/video/world/americas/100000010164067/how-daniel-led-our-reporters-to-an-assembly-line-for-russian-spies.html</guid>
+      <atom:link href="https://www.nytimes.com/video/world/americas/100000010164067/how-daniel-led-our-reporters-to-an-assembly-line-for-russian-spies.html" rel="standout"></atom:link>
+      <description>For years, Russia used Brazil as a launchpad for its most elite intelligence officers, known as illegals. They started businesses, made friends and had love affairs — events that, over many years, became the building blocks of entirely new identities. Jane Bradley and Michael Schwirtz, investigative reporters for The New York Times, discuss one case.</description>
+      <dc:creator>Jane Bradley, Michael Schwirtz, Christina Thornell, Laura Salaberry and Nikolay Nikolov</dc:creator>
+      <pubDate>Thu, 22 May 2025 18:34:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brazil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+    </item>
+    <item>
+      <title>As the Soviet Union Fell, Did the K.G.B. Leave Behind a Gift in Brazil?</title>
+      <link>https://www.nytimes.com/2025/05/22/world/americas/kgb-russia-spy-brazil-birth-certificates-deep-cover-illegals.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/americas/kgb-russia-spy-brazil-birth-certificates-deep-cover-illegals.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/americas/kgb-russia-spy-brazil-birth-certificates-deep-cover-illegals.html" rel="standout"></atom:link>
+      <description>A forensic analysis of birth certificates used by deep-cover operatives suggests a tantalizing possibility.</description>
+      <dc:creator>Jane Bradley and Michael Schwirtz</dc:creator>
+      <pubDate>Thu, 22 May 2025 12:51:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Birth Certificates</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Espionage and Intelligence Services</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cold War Era</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">KGB</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gordievsky, Oleg</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Brazil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Relations</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2025/05/19/world/00int-russia-deepcover-coldwar/00int-russia-deepcover-coldwar-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>John van Hasselt/Sygma, via Getty Images</media:credit>
+      <media:description>The K.G.B. headquarters in Moscow in 1982. The culture of Russian espionage often prizes creative long-term planning over immediate expediency.</media:description>
+    </item>
+    <item>
+      <title>Roof of 14th-Century Drum Tower Partially Collapses in China</title>
+      <link>https://www.nytimes.com/2025/05/22/world/asia/china-drum-tower-collapse.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/asia/china-drum-tower-collapse.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/asia/china-drum-tower-collapse.html" rel="standout"></atom:link>
+      <description>The Drum Tower in Fengyang County, which dates to the 14th century, is one of many historical sites that have been renovated as cultural tourism has boomed.</description>
+      <dc:creator>Vivian Wang</dc:creator>
+      <pubDate>Thu, 22 May 2025 07:39:47 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Historic Buildings and Sites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Buildings (Structures)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Roofs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Accidents and Safety</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Restoration and Renovation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">China</category>
+      <media:content height="1104" medium="image" url="https://static01.nyt.com/images/2025/05/22/world/22vid-china-tower-cover/22vid-china-tower-cover-mediumSquareAt3X.jpg" width="1104"></media:content>
+      <media:credit>Social media, via Reuters</media:credit>
+    </item>
+    <item>
+      <title>Thursday Briefing</title>
+      <link>https://www.nytimes.com/2025/05/22/briefing/trump-south-africa-gaza.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/briefing/trump-south-africa-gaza.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/briefing/trump-south-africa-gaza.html" rel="standout"></atom:link>
+      <description>A fraught White House meeting.</description>
+      <dc:creator>Natasha Frost</dc:creator>
+      <pubDate>Thu, 22 May 2025 05:10:50 +0000</pubDate>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/22ambriefing-europe-Trump-Ramaphosa-mzch-copy/22ambriefing-europe-Trump-Ramaphosa-mzch-copy-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>President Cyril Ramaphosa of South Africa and President Trump in the Oval Office yesterday.</media:description>
+    </item>
+    <item>
+      <title>Short of Prison Space, U.K. Will Adopt U.S. Model of Time Off for Good Conduct</title>
+      <link>https://www.nytimes.com/2025/05/22/world/europe/prisons-britain-texas.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/22/world/europe/prisons-britain-texas.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/22/world/europe/prisons-britain-texas.html" rel="standout"></atom:link>
+      <description>The British government said criminals could earn earlier release under a new program to cut the prison population, citing Texas as an inspiration.</description>
+      <dc:creator>Lizzie Dearden</dc:creator>
+      <pubDate>Thu, 22 May 2025 17:21:01 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Prisons and Prisoners</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sentences (Criminal)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Labour Party (Great Britain)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">England</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Wales</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Great Britain</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2025/05/22/multimedia/22uk-prisons-1-bckm/22uk-prisons-1-bckm-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Andy Rain/EPA, via Shutterstock</media:credit>
+      <media:description>The Wandsworth prison in London, which a report found to be overcrowded and infested with vermin last year.</media:description>
+    </item>
+    <item>
+      <title>Trump Casts Himself as a Protector of Persecuted White People</title>
+      <link>https://www.nytimes.com/2025/05/21/us/politics/trump-race-south-africa.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/21/us/politics/trump-race-south-africa.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/21/us/politics/trump-race-south-africa.html" rel="standout"></atom:link>
+      <description>President Trump publicly dressed down the president of South Africa based on a fringe conspiracy theory, providing a vivid distillation of his views on race.</description>
+      <dc:creator>Zolan Kanno-Youngs</dc:creator>
+      <pubDate>Thu, 22 May 2025 13:17:26 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Minorities</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Black People</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Whites</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Race and Ethnicity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Apartheid (Policy)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conspiracy Theories</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramaphosa, Cyril</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Africa</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/21dc-Trump-Race-mlkf/21dc-Trump-Race-mlkf-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>President Donald Trump met President Cyril Ramaphosa of South Africa in the Oval Office on Wednesday.</media:description>
+    </item>
+    <item>
+      <title>Thursday Briefing: Trump Lectures South Africa’s Leader</title>
+      <link>https://www.nytimes.com/2025/05/21/briefing/south-africa-gaza-russia-brazil-spy-network.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/21/briefing/south-africa-gaza-russia-brazil-spy-network.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/21/briefing/south-africa-gaza-russia-brazil-spy-network.html" rel="standout"></atom:link>
+      <description>Plus, everyone is moving to Chengdu.</description>
+      <dc:creator>Justin Porter</dc:creator>
+      <pubDate>Wed, 21 May 2025 21:48:45 +0000</pubDate>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/22ambriefing-asia-trump-sa/22ambriefing-asia-trump-sa-mediumSquareAt3X-v4.jpg" width="1800"></media:content>
+      <media:credit>Eric Lee/The New York Times</media:credit>
+      <media:description>President Cyril Ramaphosa of South Africa and President Trump in the Oval Office, yesterday.</media:description>
+    </item>
+    <item>
+      <title>Don’t Mention Climate: Now, Clean Energy Is All About the Money</title>
+      <link>https://www.nytimes.com/2025/05/21/climate/inflation-reduction-act-lobbying-climate.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/21/climate/inflation-reduction-act-lobbying-climate.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/21/climate/inflation-reduction-act-lobbying-climate.html" rel="standout"></atom:link>
+      <description>The Inflation Reduction Act was once hailed as the biggest climate law in U.S. history. But as supporters try to save it, they’ve stopped talking about the environment altogether.</description>
+      <dc:creator>Brad Plumer and Lisa Friedman</dc:creator>
+      <pubDate>Wed, 21 May 2025 21:16:24 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Global Warming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Greenhouse Gas Emissions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tax Credits, Deductions and Exemptions</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Alternative and Renewable Energy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Inflation Reduction Act of 2022</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Solar Energy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Electric and Hybrid Vehicles</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Environment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2024</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trump, Donald J</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/21cli-climate-muted-01-qlwb/21cli-climate-muted-01-qlwb-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Joe Buglewicz for The New York Times</media:credit>
+      <media:description>Wind turbines at the New London State Pier in Connecticut, destined for the South Fork Wind Farm.</media:description>
+    </item>
+    <item>
+      <title>Republican Bill Could Set Off Global Tax Fight</title>
+      <link>https://www.nytimes.com/2025/05/21/us/politics/global-minimum-tax-bill.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2025/05/21/us/politics/global-minimum-tax-bill.html</guid>
+      <atom:link href="https://www.nytimes.com/2025/05/21/us/politics/global-minimum-tax-bill.html" rel="standout"></atom:link>
+      <description>Retaliatory taxes on foreign companies operating in the U.S. could open the door for a broader economic conflict.</description>
+      <dc:creator>Alan Rappeport</dc:creator>
+      <pubDate>Wed, 21 May 2025 19:32:03 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Taxation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Corporate Taxes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tax Shelters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Law and Legislation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Foreign Investments</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">International Trade and World Market</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Group of Seven</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States International Relations</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">House of Representatives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Republican Party</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2025/05/21/multimedia/21dc-globaltax-jlpw/21dc-globaltax-jlpw-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Kenny Holston/The New York Times</media:credit>
+      <media:description>If Congress passes the sweeping tax legislation being pushed by Republicans, it is likely to become a more prominent source of tension between the United States and other nations.</media:description>
+    </item>
+  </channel>
+</rss>
