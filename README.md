@@ -23,6 +23,14 @@ I think there would likely be a few services:
 * **Assembler**: converts the extracted components into a styled .EPUB file
 * **Uploader**: uploaders the .EPUB to Dropbox via the HTTP API.
 
+### Version 2
+
+There are really four programs:
+1. A Dropbox Connector API that accepts files and uploads them to Dropbox, and can get the list of files currently uploaded to Dropbox
+2. A Downloader/Processor that takes URLs, parses the content, and produces an EPUB
+3. A feed reader/tracker/crawler that keeps track of feeds, waits for new posts, etc
+4. A browser extension which works for processing individual webpages, turning them into epubs, and sending them to Dropbox
+
 ## TODO
 
 * Caching
@@ -36,4 +44,6 @@ I think there would likely be a few services:
 * Feed storage
 * There are really two types of RSS feeds: those which include the content of the post, and those which include a link
   to the post. It maye be better to find an external RSS feed parser
-go * Handle Atom syndication feeds http://www.w3.org/2005/Atom https://datatracker.ietf.org/doc/html/rfc4287
+go 
+* Handle Atom syndication feeds http://www.w3.org/2005/Atom https://datatracker.ietf.org/doc/html/rfc4287
+* 
