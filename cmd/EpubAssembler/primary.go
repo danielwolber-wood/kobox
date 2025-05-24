@@ -20,12 +20,12 @@ func Fetch(url string) (string, error) {
 }
 
 // Extract accepts HTML and returns a ReadabilityObject
-func Extract(worker JSWorker, html string) (ReadabilityObject, erro) {
+func Extract(worker JSWorker, html string) (ReadabilityObject, error) {
 	obj, err := worker.ParseHTML(html)
 	if err != nil {
 		return ReadabilityObject{}, err
 	}
-	return obj, nil
+	return *obj, nil
 }
 
 // Generate accepts a ReadabilityObject and returns an Epub
