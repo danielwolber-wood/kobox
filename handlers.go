@@ -59,11 +59,10 @@ func (s *Server) handleFeedPost(w http.ResponseWriter, r *http.Request) {
 	}
 	url := req.url
 	// from a URL, I need to get the title
-	rss, err := ParseRSSFromURL(url)
+	feed, err := ParseWithGofeed(url)
 	if err != nil {
-		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot parse RSS: %v\n", err.Error()))
+		WriteError(w, http.StatusInternalServerError, fmt.Sprintf("cannot parse feed: %v\n", err.Error()))
 	}
-	title := rss.GetTitle()
-	s.opml.AddFeed(title, url, "rss")
+	s.opml.AddFeed(feed.Title, feed.Link, feed.FeedType)
 	w.WriteHeader(http.StatusOK)
 }

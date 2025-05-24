@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/mmcdole/gofeed"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -62,4 +63,13 @@ func GetAppDataDir(appname string) (string, error) {
 func FileExists(filename string) bool {
 	_, err := os.Stat(filename)
 	return !os.IsNotExist(err)
+}
+
+func ParseWithGofeed(url string) (*gofeed.Feed, error) {
+	parser := gofeed.NewParser()
+	feed, err := parser.ParseURL(url)
+	if err != nil {
+		return nil, err
+	}
+	return feed, nil
 }
