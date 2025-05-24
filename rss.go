@@ -4,6 +4,7 @@ package main
 import (
 	"encoding/xml"
 	"io"
+	"net/http"
 )
 
 type RSS struct {
@@ -60,6 +61,19 @@ func ParseRSSFromReader(reader io.Reader) (*RSS, error) {
 	return &rss, nil
 }
 
+func ParseRSSFromURL(url string) (*RSS, error) {
+	resp, err := http.Get(url)
+	defer resp.Body.Close()
+	if err != nil {
+		return nil, err
+	}
+	parsed, err := ParseRSSFromReader(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+	return parsed, nil
+}
+
 func (rss *RSS) ExtractItems() []Item {
 	var items []Item
 	for _, item := range rss.Channel.Items {
@@ -83,4 +97,8 @@ func (rss *RSS) AddItem(title, description, pubdate, guid, link, length, itemTyp
 		GUID:        guid,
 	}
 	rss.Channel.Items = append(rss.Channel.Items, item)
+}
+
+func (rss *RSS) GetTitle() string {
+	return rss.Channel.Title
 }
