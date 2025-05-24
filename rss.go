@@ -67,3 +67,20 @@ func (rss *RSS) ExtractItems() []Item {
 	}
 	return items
 }
+
+func (rss *RSS) AddItem(title, description, pubdate, guid, link, length, itemType, enclosureURL string) {
+	enclosure := Enclosure{
+		URL:    enclosureURL,
+		Length: length,
+		Type:   itemType,
+	}
+	item := Item{
+		Title:       title,
+		Description: description,
+		PubDate:     pubdate,
+		Enclosure:   enclosure,
+		Link:        link,
+		GUID:        guid,
+	}
+	rss.Channel.Items = append(rss.Channel.Items, item)
+}
