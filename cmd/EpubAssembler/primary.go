@@ -33,7 +33,7 @@ func Generate(rr ReadabilityObject) (Epub, error) {
 	html := GenerateHTML(rr.Title, rr.Title)
 	epub, err := ConvertStringWithPandoc(html, "html", "epub")
 	if err != nil {
-		return err
+		return Epub{}, err
 	}
 	return epub, nil
 }
