@@ -58,3 +58,8 @@ func GetAppDataDir(appname string) (string, error) {
 
 	return appDir, nil
 }
+
+func FileExists(filename string) bool {
+	_, err := os.Stat(filename)
+	return !os.IsNotExist(err)
+}
