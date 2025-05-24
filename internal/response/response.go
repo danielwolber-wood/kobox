@@ -1,4 +1,4 @@
-package main
+package response
 
 type ReadabilityURLRequest struct {
 	Url string `json:"url"`
