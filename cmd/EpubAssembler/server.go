@@ -6,8 +6,11 @@ import (
 )
 
 type Server struct {
-	readabilityParser *ReadabilityParser
-	dropboxApiKey     string
+	dropboxApiKey string
+	FetchQueue    chan URL
+	ExtractQueue  chan HTML
+	GenerateQueue chan ReadabilityObject
+	UploadQueue   chan UploadObject
 }
 
 func newServer() (*Server, error) {
@@ -15,12 +18,15 @@ func newServer() (*Server, error) {
 	if apiKey == "" {
 		log.Fatal("DROPBOX_API_KEY not set")
 	}
-	parser, err := NewReadabilityParser()
-	if err != nil {
-		return nil, err
-	}
+	fetchQueue := make(chan URL, 16)
+	extractQueue := make(chan HTML, 16)
+	generateQueue := make(chan ReadabilityObject, 16)
+	uploadQueue := make(chan UploadObject, 32)
 	return &Server{
-		readabilityParser: parser,
-		dropboxApiKey:     apiKey,
+		dropboxApiKey: apiKey,
+		FetchQueue:    fetchQueue,
+		ExtractQueue:  extractQueue,
+		GenerateQueue: generateQueue,
+		UploadQueue:   uploadQueue,
 	}, nil
 }

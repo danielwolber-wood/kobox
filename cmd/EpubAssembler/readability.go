@@ -6,14 +6,20 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"strings"
 
 	"github.com/dop251/goja"
 )
 
-func NewReadabilityParser() (*ReadabilityParser, error) {
-	vm := goja.New()
+func NewJSWorkerFactory() (*JSWorkerFactory, error) {
+	program, err := goja.Compile("readability.js", readabilityJS, false)
+	if err != nil {
+		return nil, fmt.Errorf("failed to compile readability.js: %w", err)
+	}
+	return &JSWorkerFactory{readabilityProgram: program}, nil
+}
 
+func (f *JSWorkerFactory) NewJSWorker() (*JSWorker, error) {
+	vm := goja.New()
 	err := vm.Set("window", vm.NewObject())
 	if err != nil {
 		return nil, fmt.Errorf("failed to set window: %w", err)
@@ -55,20 +61,20 @@ func NewReadabilityParser() (*ReadabilityParser, error) {
 		return nil, fmt.Errorf("failed to setup DOM environment: %w", err)
 	}
 
-	readabilityJS, err := loadReadabilityJS()
+	readabilityJS = loadReadabilityJS()
 	if err != nil {
 		return nil, fmt.Errorf("failed to load readability.js: %w", err)
 	}
 
-	_, err = vm.RunString(readabilityJS)
+	_, err = vm.RunProgram(f.readabilityProgram)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute readability.js: %w", err)
 	}
 
-	return &ReadabilityParser{vm: vm}, nil
+	return &JSWorker{vm: vm}, nil
 }
 
-func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityObject, error) {
+func (worker *JSWorker) ParseHTML(htmlContent string) (*ReadabilityObject, error) {
 	parseScript := `
 		function parseWithReadability(htmlString) {
 			// Create a basic DOM parser
@@ -154,17 +160,17 @@ func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityObject, 
 		}
 	`
 
-	_, err := rp.vm.RunString(parseScript)
+	_, err := worker.vm.RunString(parseScript)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create parser function: %w", err)
 	}
 
-	err = rp.vm.Set("htmlInput", htmlContent)
+	err = worker.vm.Set("htmlInput", htmlContent)
 	if err != nil {
 		return nil, fmt.Errorf("failed to set HTML input: %w", err)
 	}
 
-	val, err := rp.vm.RunString("parseWithReadability(htmlInput)")
+	val, err := worker.vm.RunString("parseWithReadability(htmlInput)")
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse HTML: %w", err)
 	}
@@ -183,7 +189,7 @@ func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityObject, 
 	return &result, nil
 }
 
-func (rp *ReadabilityParser) ParseURL(url string) (*ReadabilityObject, error) {
+func (worker *JSWorker) ParseURL(url string) (*ReadabilityObject, error) {
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err
@@ -195,25 +201,13 @@ func (rp *ReadabilityParser) ParseURL(url string) (*ReadabilityObject, error) {
 		return nil, err
 	}
 
-	result, err := rp.ParseHTML(string(body))
+	result, err := worker.ParseHTML(string(body))
 	if err != nil {
 		return nil, err
 	}
 	return result, nil
 }
 
-func loadReadabilityJS() (string, error) {
-	resp, err := http.Get("https://raw.githubusercontent.com/mozilla/readability/main/Readability.js")
-	if err != nil {
-		return "", fmt.Errorf("failed to download readability.js: %w", err)
-	}
-	defer resp.Body.Close()
-
-	var builder strings.Builder
-	_, err = io.Copy(&builder, resp.Body)
-	if err != nil {
-		return "", fmt.Errorf("failed to read readability.js: %w", err)
-	}
-
-	return builder.String(), nil
+func loadReadabilityJS() string {
+	return readabilityJS
 }

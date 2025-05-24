@@ -33,43 +33,14 @@ There are really four programs:
 
 #### Downloader/Processor
 
-Based on input/output, there are basically nine pathways:
+Basically, the pipeline looks like this:
 
 ```txt
-input |   output  | pipeline
-url   ->  RR        url -> webpage -> RR
-url   ->  epub      url -> webpage -> RR -> epub
-url   ->  dropbox   url -> webpage -> RR -> epub -> dropbox
-page  ->  RR        webpage -> RR
-page  ->  epub      webpage -> RR -> epub
-page  ->  dropbox   webpage -> RR -> epub -> dropbox
-RR    ->  epub      RR -> epub
-RR    ->  dropbox   RR -> epub -> dropbox
-epub  ->  dropbox   epub -> dropbox
+url -> full page -> readability object -> minimal html -> epub -> dropbox
 ```
 
-So I think my API is going to look something like this:
-
-```txt
-# Direct transformations
-POST /convert/url-to-rr
-POST /convert/url-to-epub  
-POST /convert/url-to-dropbox
-POST /convert/page-to-rr
-POST /convert/page-to-epub
-POST /convert/page-to-dropbox
-POST /convert/rr-to-epub
-POST /convert/rr-to-dropbox
-POST /convert/epub-to-dropbox
-
-# Individual steps
-POST /fetch     url -> webpage
-POST /extract   webpage -> rr 
-POST /generate  rr -> epub
-POST /upload    epub -> dropbox
-```
-
-Rather than having a separate Dropbox Connector, it might make sense to just add a single GET endpoint to this one
+Where the API accepts any of the steps leading up to Dropbox, and processes them all the way down to uploading them to
+dropbox. Since the minimal html -> epub is so minimal, I combine them into a single "Generate" step.
 
 ## TODO
 

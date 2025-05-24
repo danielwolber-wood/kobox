@@ -1,8 +1,15 @@
 package main
 
-import "github.com/dop251/goja"
+import (
+	"embed"
+	"github.com/dop251/goja"
+)
 
 type Epub []byte
+
+type URL string
+
+type HTML string
 
 type ReadabilityObject struct {
 	Title   string `json:"title"`
@@ -16,6 +23,13 @@ type UploadObject struct {
 	DestinationPath string
 }
 
-type ReadabilityParser struct {
+//go:embed readability.js
+var readabilityJS string
+
+type JSWorkerFactory struct {
+	readabilityProgram *goja.Program
+}
+
+type JSWorker struct {
 	vm *goja.Runtime
 }
