@@ -23,17 +23,21 @@ type Channel struct {
 
 type Item struct {
 	Title       string    `xml:"title"`
-	Description string    `xml:"description"`
-	PubDate     string    `xml:"pubDate"`
-	Enclosure   Enclosure `xml:"enclosure"`
+	Description string    `xml:"description,omitempty"`
+	PubDate     string    `xml:"pubDate,omitempty"`
+	Enclosure   Enclosure `xml:"enclosure,omitempty"`
 	Link        string    `xml:"link"`
-	GUID        string    `xml:"guid"`
+	GUID        string    `xml:"guid,omitempty"`
 }
 
 type Enclosure struct {
 	URL    string `xml:"url,attr"`
-	Length string `xml:"length,attr"`
-	Type   string `xml:"type,attr"`
+	Length string `xml:"length,attr,omitempty"`
+	Type   string `xml:"type,attr,omitempty"`
+}
+
+func NewRSS() *RSS {
+	return RSS{}
 }
 
 func ParseRSS(rssData string) (*RSS, error) {

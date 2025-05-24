@@ -29,6 +29,10 @@ type Outline struct {
 	Outlines []Outline `xml:"outline,omitempty"`
 }
 
+func NewOPML() *OPML {
+	return &OPML{Version: "2.0", Head: Head{Title: "Feed Subscriptions"}, Body: Body{Outline: Outline{}}}
+}
+
 func ParseOPML(xmlData string) (*OPML, error) {
 	var opml OPML
 	err := xml.Unmarshal([]byte(xmlData), &opml)

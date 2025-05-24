@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 )
 
@@ -41,4 +43,18 @@ func GenerateHTML(title, body string) string {
     %s
 </body>
 </html>`, title, body)
+}
+
+func GetAppDataDir(appname string) (string, error) {
+	configDir, err := os.UserConfigDir()
+	if err != nil {
+		return "", err
+	}
+	appDir := filepath.Join(configDir, appname)
+	err = os.Mkdir(appDir, 0755)
+	if err != nil {
+		return "", err
+	}
+
+	return appDir, nil
 }
