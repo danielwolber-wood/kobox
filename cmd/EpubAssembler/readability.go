@@ -1,5 +1,4 @@
 // This code was automatically generated since I do not know Javascript
-
 package main
 
 import (
@@ -12,7 +11,7 @@ import (
 	"github.com/dop251/goja"
 )
 
-type ReadabilityResult struct {
+type ReadabilityObject struct {
 	Title   string `json:"title"`
 	Content string `json:"content"`
 	Excerpt string `json:"excerpt"`
@@ -79,7 +78,7 @@ func NewReadabilityParser() (*ReadabilityParser, error) {
 	return &ReadabilityParser{vm: vm}, nil
 }
 
-func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityResult, error) {
+func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityObject, error) {
 	parseScript := `
 		function parseWithReadability(htmlString) {
 			// Create a basic DOM parser
@@ -185,7 +184,7 @@ func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityResult, 
 		return nil, fmt.Errorf("failed to marshal result: %w", err)
 	}
 
-	var result ReadabilityResult
+	var result ReadabilityObject
 	err = json.Unmarshal(resultJSON, &result)
 	if err != nil {
 		return nil, fmt.Errorf("failed to unmarshal result: %w", err)
@@ -194,7 +193,7 @@ func (rp *ReadabilityParser) ParseHTML(htmlContent string) (*ReadabilityResult, 
 	return &result, nil
 }
 
-func (rp *ReadabilityParser) ParseURL(url string) (*ReadabilityResult, error) {
+func (rp *ReadabilityParser) ParseURL(url string) (*ReadabilityObject, error) {
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err
