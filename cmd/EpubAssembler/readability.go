@@ -74,7 +74,7 @@ func (f *JSWorkerFactory) NewJSWorker() (*JSWorker, error) {
 	return &JSWorker{vm: vm}, nil
 }
 
-func (worker *JSWorker) ParseHTML(htmlContent string) (*ReadabilityObject, error) {
+func (worker *JSWorker) ParseHTML(htmlContent HTML) (*ReadabilityObject, error) {
 	parseScript := `
 		function parseWithReadability(htmlString) {
 			// Create a basic DOM parser
@@ -189,8 +189,8 @@ func (worker *JSWorker) ParseHTML(htmlContent string) (*ReadabilityObject, error
 	return &result, nil
 }
 
-func (worker *JSWorker) ParseURL(url string) (*ReadabilityObject, error) {
-	resp, err := http.Get(url)
+func (worker *JSWorker) ParseURL(url URL) (*ReadabilityObject, error) {
+	resp, err := http.Get(string(url))
 	if err != nil {
 		return nil, err
 	}
@@ -201,7 +201,7 @@ func (worker *JSWorker) ParseURL(url string) (*ReadabilityObject, error) {
 		return nil, err
 	}
 
-	result, err := worker.ParseHTML(string(body))
+	result, err := worker.ParseHTML(HTML(body))
 	if err != nil {
 		return nil, err
 	}
