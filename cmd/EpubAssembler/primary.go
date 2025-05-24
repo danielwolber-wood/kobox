@@ -8,8 +8,8 @@ import (
 )
 
 // Fetch accepts a URL string and returns HTML
-func Fetch(url string) (string, error) {
-	resp, err := http.Get(url)
+func Fetch(url URL) (string, error) {
+	resp, err := http.Get(string(url))
 	if err != nil {
 		return "", err
 	}
@@ -22,7 +22,7 @@ func Fetch(url string) (string, error) {
 }
 
 // Extract accepts HTML and returns a ReadabilityObject
-func Extract(worker JSWorker, html string) (ReadabilityObject, error) {
+func Extract(worker JSWorker, html HTML) (ReadabilityObject, error) {
 	obj, err := worker.ParseHTML(html)
 	if err != nil {
 		return ReadabilityObject{}, err
