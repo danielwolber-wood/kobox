@@ -38,7 +38,7 @@ type Enclosure struct {
 }
 
 func NewRSS() *RSS {
-	return RSS{}
+	return &RSS{Version: "2.0", Channel: Channel{Items: []Item{}}}
 }
 
 func ParseRSS(rssData string) (*RSS, error) {
