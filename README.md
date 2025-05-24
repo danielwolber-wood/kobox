@@ -34,3 +34,6 @@ I think there would likely be a few services:
 * Configuration file
 * Download tracking
 * Feed storage
+* There are really two types of RSS feeds: those which include the content of the post, and those which include a link
+  to the post. It maye be better to find an external RSS feed parser
+* Handle Atom syndication feeds http://www.w3.org/2005/Atom https://datatracker.ietf.org/doc/html/rfc4287
