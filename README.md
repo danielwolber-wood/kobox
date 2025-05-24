@@ -31,6 +31,46 @@ There are really four programs:
 3. A feed reader/tracker/crawler that keeps track of feeds, waits for new posts, etc
 4. A browser extension which works for processing individual webpages, turning them into epubs, and sending them to Dropbox
 
+#### Downloader/Processor
+
+Based on input/output, there are basically nine pathways:
+
+```txt
+input |   output  | pipeline
+url   ->  RR        url -> webpage -> RR
+url   ->  epub      url -> webpage -> RR -> epub
+url   ->  dropbox   url -> webpage -> RR -> epub -> dropbox
+page  ->  RR        webpage -> RR
+page  ->  epub      webpage -> RR -> epub
+page  ->  dropbox   webpage -> RR -> epub -> dropbox
+RR    ->  epub      RR -> epub
+RR    ->  dropbox   RR -> epub -> dropbox
+epub  ->  dropbox   epub -> dropbox
+```
+
+So I think my API is going to look something like this:
+
+```txt
+# Direct transformations
+POST /convert/url-to-rr
+POST /convert/url-to-epub  
+POST /convert/url-to-dropbox
+POST /convert/page-to-rr
+POST /convert/page-to-epub
+POST /convert/page-to-dropbox
+POST /convert/rr-to-epub
+POST /convert/rr-to-dropbox
+POST /convert/epub-to-dropbox
+
+# Individual steps
+POST /fetch     url -> webpage
+POST /extract   webpage -> rr 
+POST /generate  rr -> epub
+POST /upload    epub -> dropbox
+```
+
+Rather than having a separate Dropbox Connector, it might make sense to just add a single GET endpoint to this one
+
 ## TODO
 
 * Caching
@@ -44,6 +84,3 @@ There are really four programs:
 * Feed storage
 * There are really two types of RSS feeds: those which include the content of the post, and those which include a link
   to the post. It maye be better to find an external RSS feed parser
-go 
-* Handle Atom syndication feeds http://www.w3.org/2005/Atom https://datatracker.ietf.org/doc/html/rfc4287
-* 
