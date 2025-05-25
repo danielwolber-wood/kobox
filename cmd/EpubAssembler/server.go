@@ -43,8 +43,9 @@ func (s *Server) worker(n int) {
 	}
 	*/
 	for job := range s.jobQueue {
-		switch job.currentStep {
-		case StepPrefetch:
+		// TODO add Task for taking as input a full HTML page
+		switch job.taskType {
+		case TaskFetch:
 			// TODO implement a queue system of some kind for tasks that failed
 			// TODO check if a manual title was passed in and, if so, use that
 			fmt.Println("fetching")
@@ -61,9 +62,9 @@ func (s *Server) worker(n int) {
 			//log.Printf("content is: \n%v\n", article.Content)
 			//log.Printf("textcontent is: \n%v\n", article.TextContent)
 			job.readabilityObject = ro
-			job.currentStep = StepExtracted
+			job.taskType = TaskGenerate
 			s.jobQueue <- job
-		case StepExtracted:
+		case TaskGenerate:
 			// run epub generation, ro -> epub []bytes
 			fmt.Println("generating")
 			epub, err := Generate(job.readabilityObject)
@@ -72,9 +73,9 @@ func (s *Server) worker(n int) {
 				continue
 			}
 			job.epub = epub
-			job.currentStep = StepGenerated
+			job.taskType = TaskUpload
 			s.jobQueue <- job
-		case StepGenerated:
+		case TaskUpload:
 			// construct upload object then upload to dropbox
 			u := UploadObject{
 				Data:            job.epub,
@@ -96,7 +97,7 @@ func (s *Server) worker(n int) {
 			fmt.Println("done")
 			// TODO add to queue
 			continue
-		case StepUploaded:
+		case TaskInform:
 			// do nothing now, but should be a "send success to client that made request" step
 			continue
 		default:

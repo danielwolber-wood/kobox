@@ -8,14 +8,14 @@ import (
 )
 
 const (
-	StepPrefetch = iota
-	StepFetched
-	StepExtracted
-	StepGenerated
-	StepUploaded
+	TaskFetch = iota
+	TaskExtract
+	TaskGenerate
+	TaskUpload
+	TaskInform
 )
 
-type Step byte
+type TaskType byte
 
 type Epub []byte
 
@@ -84,7 +84,7 @@ type JSWorker struct {
 }
 
 type Job struct {
-	currentStep       Step
+	taskType          TaskType
 	url               URL
 	fullText          HTML
 	epub              Epub
