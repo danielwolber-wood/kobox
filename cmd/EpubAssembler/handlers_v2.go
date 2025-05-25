@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"github.com/danielwolber-wood/kobox/internal/response"
@@ -27,7 +28,7 @@ func (s *Server) handlerUploadURL(w http.ResponseWriter, r *http.Request) {
 	}
 	defer r.Body.Close()
 	url := obj.Url
-	job := Job{TaskFetch, url, "", nil, GenerateOptions{Title: obj.Title}, UploadOptions{}}
+	job := Job{taskType: TaskFetch, url: url, generateOptions: GenerateOptions{Title: obj.Title}}
 	s.jobQueue <- job
 }
 
@@ -45,6 +46,6 @@ func (s *Server) handlerUploadFullPage(w http.ResponseWriter, r *http.Request) {
 	}
 	defer r.Body.Close()
 	html := obj.Html
-	job := Job{TaskExtract, "", html, nil, GenerateOptions{Title: obj.Title}, UploadOptions{}}
+	job := Job{taskType: TaskExtract, htmlReader: bytes.NewReader([]byte(html)), fullText: html, generateOptions: GenerateOptions{Title: obj.Title}}
 	s.jobQueue <- job
 }

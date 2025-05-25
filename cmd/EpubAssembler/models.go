@@ -1,6 +1,7 @@
 package main
 
 import (
+	"io"
 	"sync"
 	"time"
 )
@@ -73,6 +74,7 @@ type UploadOptions struct {
 type Job struct {
 	taskType        TaskType
 	url             URL
+	htmlReader      io.Reader
 	fullText        HTML
 	epub            Epub
 	generateOptions GenerateOptions
