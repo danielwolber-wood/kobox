@@ -7,10 +7,16 @@ import (
 )
 
 func main() {
-	s, err := newServer()
+	refreshOptions, err := AuthFlow()
+	if err != nil {
+		log.Fatal("error with auth flow: %v\n", err)
+	}
+
+	s, err := newServer(*refreshOptions)
 	if err != nil {
 		log.Fatalf("error creating server: %v\n", err.Error())
 	}
+
 	numWorkers := 5
 	for i := 0; i < numWorkers; i++ {
 		go s.worker(i)

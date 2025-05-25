@@ -3,6 +3,8 @@ package main
 import (
 	_ "embed"
 	"github.com/dop251/goja"
+	"sync"
+	"time"
 )
 
 const (
@@ -20,6 +22,33 @@ type Epub []byte
 type URL string
 
 type HTML string
+
+type TokenExchangeOptions struct {
+	AuthCode     string
+	ClientID     string
+	ClientSecret string
+}
+
+type RequestRefreshTokenOptions struct {
+	RefreshToken string
+	ClientID     string
+	ClientSecret string
+}
+
+// NOTE access token is the short-lived one
+type Token struct {
+	AccessToken  string `json:"access_token"`
+	TokenType    string `json:"token_type"`
+	RefreshToken string `json:"refresh_token"`
+}
+
+type TokenManager struct {
+	mu           sync.RWMutex
+	token        Token
+	expiresAt    time.Time
+	ClientID     string
+	ClientSecret string
+}
 
 type URLRequestObject struct {
 	Url   URL    `json:"url"`

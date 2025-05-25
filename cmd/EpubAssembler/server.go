@@ -2,63 +2,63 @@ package main
 
 import (
 	"fmt"
+	"github.com/go-shiori/go-readability"
+	"sync"
+
+	//"golang.org/x/oauth2"
 	"log"
-	"os"
+	"time"
 )
 
 type Server struct {
-	dropboxApiKey   string
+	tokenManager    *TokenManager
 	jsWorkerFactory *JSWorkerFactory
 	jobQueue        chan Job
 }
 
-func newServer() (*Server, error) {
-	apiKey := os.Getenv("DROPBOX_API_KEY")
-	if apiKey == "" {
-		log.Fatal("DROPBOX_API_KEY not set")
-	}
+func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
+
 	jobQueue := make(chan Job, 256)
 	jsWorkerFactory, err := NewJSWorkerFactory()
 	if err != nil {
-		log.Fatal("Could not create worker factory")
+		return nil, fmt.Errorf("Could not create worker factory: %v\n", err)
 	}
+	token, err := RequestRefreshToken(opts)
+	if err != nil {
+		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
+	}
+	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID, ClientSecret: opts.ClientSecret}
 	return &Server{
-		dropboxApiKey:   apiKey,
+		tokenManager:    &tokenManager,
 		jobQueue:        jobQueue,
 		jsWorkerFactory: jsWorkerFactory,
 	}, nil
 }
 
 func (s *Server) worker(n int) {
-	jsWorker, err := s.jsWorkerFactory.NewJSWorker()
+	/* jsWorker, err := s.jsWorkerFactory.NewJSWorker()
 	if err != nil {
 		log.Printf("Failed to start worker: %v\n", err)
 		return
 	}
+	*/
 	for job := range s.jobQueue {
-		// TODO as done here, there is a bug: it doesn't update the steps correctly
 		switch job.currentStep {
 		case StepPrefetch:
+			// TODO check if a manual title was passed in and, if so, use that
 			fmt.Println("fetching")
-			fullPage, err := Fetch(job.url)
+			article, err := readability.FromURL(string(job.url), 30*time.Second)
 			if err != nil {
-				log.Printf("Error processing url: %v\n", err)
-				continue
+				log.Printf("Error fetching article: %v\n", err)
 			}
-			job.fullText = fullPage
-			// s.jobQueue <- job
-		case StepFetched:
-			// run extraction, html -> ro
-			// TODO should check if a manual title was passed in
-			fmt.Println("extracting")
-			ro, err := Extract(*jsWorker, job.fullText)
-			if err != nil {
-				log.Printf("Error extracting: %v\n", err)
-				continue
+			ro := ReadabilityObject{
+				Title:   article.Title,
+				Content: article.Content,
+				Excerpt: article.Excerpt,
 			}
 			job.readabilityObject = ro
-			fmt.Printf("content is %v\n", job.readabilityObject.Content)
-			continue
+			job.currentStep = StepExtracted
+			s.jobQueue <- job
 		case StepExtracted:
 			// run epub generation, ro -> epub []bytes
 			fmt.Println("generating")
@@ -68,9 +68,10 @@ func (s *Server) worker(n int) {
 				continue
 			}
 			job.epub = epub
-			continue
+			job.currentStep = StepGenerated
+			s.jobQueue <- job
 		case StepGenerated:
-			// upload to dropbox, construct upload object
+			// construct upload object then upload to dropbox
 			u := UploadObject{
 				Data:            job.epub,
 				Mimetype:        "application/epub+zip",
@@ -78,7 +79,12 @@ func (s *Server) worker(n int) {
 			}
 			fmt.Println("uploading")
 			fmt.Printf("u is %v\n", u)
-			err = Upload(u, s.dropboxApiKey)
+			accessToken, err := s.tokenManager.GetValidToken()
+			if err != nil {
+				log.Printf("error getting new access token")
+			}
+			s.tokenManager.mu.Unlock()
+			err = Upload(u, accessToken)
 			if err != nil {
 				log.Printf("Error uploading: %v\n", err)
 			}
@@ -89,53 +95,7 @@ func (s *Server) worker(n int) {
 			// do nothing now, but should be a "send success to client that made request" step
 			continue
 		default:
-			switch job.currentStep {
-			case StepPrefetch:
-				fmt.Println("fetching")
-				fullPage, err := Fetch(job.url)
-				if err != nil {
-					log.Printf("Error processing url: %v\n", err)
-					continue
-				}
-				job.fullText = fullPage
-				fmt.Println("extracting")
-				ro, err := Extract(*jsWorker, job.fullText)
-				if err != nil {
-					log.Printf("Error extracting: %v\n", err)
-					continue
-				}
-				job.readabilityObject = ro
-				fmt.Printf("content is %v\n", job.readabilityObject.Content)
-				epub, err := ConvertStringWithPandoc(fullPage, "html", "epub")
-				if err != nil {
-					log.Printf("Error converting with pandoc: %v\n", err)
-					continue
-				}
-				title := job.readabilityObject.Title
-				fmt.Printf("title is %v\n", title)
-				ro = ReadabilityObject{Content: string(epub), Title: title}
-				job.readabilityObject = ro
-				fmt.Println("generating")
-				epub, err = Generate(job.readabilityObject)
-				if err != nil {
-					log.Printf("Error generating epub: %v\n", err)
-					continue
-				}
-				job.epub = epub
-				u := UploadObject{
-					Data:            job.epub,
-					Mimetype:        "application/epub+zip",
-					DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", job.readabilityObject.Title),
-				}
-				fmt.Println("uploading")
-				fmt.Printf("u is %v\n", u)
-				err = Upload(u, s.dropboxApiKey)
-				if err != nil {
-					log.Printf("Error uploading: %v\n", err)
-				}
-				fmt.Println("done")
-				continue
-			}
+			continue
 		}
 	}
 }

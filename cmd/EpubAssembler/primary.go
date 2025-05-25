@@ -46,14 +46,14 @@ func Generate(rr ReadabilityObject) (Epub, error) {
 }
 
 // Upload accepts an UploadObject and returns nothing
-func Upload(uploadObject UploadObject, apiKey string) error {
+func Upload(uploadObject UploadObject, accessToken string) error {
 	req, err := http.NewRequest("POST", "https://content.dropboxapi.com/2/files/upload", bytes.NewReader(uploadObject.Data))
 	if err != nil {
 		return err
 	}
 	req.Header.Set("Content-Type", "application/octet-stream")
 	req.Header.Set("Dropbox-API-Arg", fmt.Sprintf("{\"path\": \"%s\"}", uploadObject.DestinationPath))
-	req.Header.Add("Authorization", apiKey)
+	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", accessToken))
 	fmt.Println(req)
 
 	client := &http.Client{}
