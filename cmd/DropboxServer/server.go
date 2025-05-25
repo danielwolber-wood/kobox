@@ -32,7 +32,6 @@ func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
 
 func (s *Server) worker(n int) {
 	for job := range s.jobQueue {
-		// TODO add Task for taking as input a full HTML page
 		switch job.taskType {
 		case TaskFetch:
 			// TODO implement a queue system of some kind for tasks that failed
