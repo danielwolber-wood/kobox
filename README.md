@@ -10,6 +10,8 @@ Kobox provides a streamlined workflow for digital reading enthusiasts who want t
 1. **Server Application**: A backend service that processes URLs and HTML content, converts them to EPUB format, and automatically uploads them to your Dropbox account for synchronization with your eReader
 2. **Browser Extension**: A lightweight client-side tool that enables one-click content sending directly from your web browser
 
+![example video](example.mp4)
+
 ## Features
 
 - **One-Click Content Transfer**: Send web pages to your eReader with a single click
