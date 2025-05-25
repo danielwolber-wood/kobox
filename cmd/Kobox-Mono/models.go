@@ -96,3 +96,15 @@ type PKCECode struct {
 	CodeVerifier  string
 	CodeChallenge string
 }
+
+type ConfigData struct {
+	AuthURL       string
+	CodeVerifier  string
+	CodeChallenge string
+}
+
+type ConfigureTokenManagerOptions struct {
+	AccessToken  string
+	RefreshToken string
+	TokenType    string
+}
