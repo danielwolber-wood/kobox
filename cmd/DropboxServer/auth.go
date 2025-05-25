@@ -115,7 +115,6 @@ func AuthFlow() (*RequestRefreshTokenOptions, error) {
 		log.Printf("No .env file found or couldn't load it, using environment variables: %v\n", err)
 	}
 	refreshToken := os.Getenv("REFRESH_TOKEN")
-	fmt.Printf("Refresh token is: %v\n", refreshToken)
 	dropboxClientId := os.Getenv("DROPBOX_APP_KEY")
 	if dropboxClientId == "" {
 		return nil, fmt.Errorf("DROPBOX_APP_KEY not set")

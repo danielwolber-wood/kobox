@@ -84,7 +84,6 @@ func (s *Server) worker(n int) {
 				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", sanitizeString(job.generateOptions.Title)),
 			}
 			fmt.Println("uploading")
-			fmt.Printf("u is %v\n", u)
 			accessToken, err := s.tokenManager.GetValidToken()
 			if err != nil {
 				log.Printf("error getting new access token")
