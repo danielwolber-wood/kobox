@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	refreshOptions, err := AuthFlow()
+	refreshOptions, err := AuthFlowPKCE()
 	if err != nil {
 		log.Fatal("error with auth flow: %v\n", err)
 	}
