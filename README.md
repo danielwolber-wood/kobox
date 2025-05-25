@@ -113,7 +113,7 @@ We welcome contributions to improve Kobox. Please feel free to submit issues, fe
 
 ## License
 
-[License information to be added]
+MIT
 
 ## Support
 
