@@ -16,14 +16,14 @@ type Server struct {
 	jobQueue     chan Job
 }
 
-func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
+func newServer(opts RequestRefreshTokenPKCEOptions) (*Server, error) {
 
 	jobQueue := make(chan Job, 256)
-	token, err := RequestRefreshToken(opts)
+	token, err := RequestRefreshTokenPKCE(opts)
 	if err != nil {
 		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
 	}
-	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID, ClientSecret: opts.ClientSecret}
+	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID}
 	return &Server{
 		tokenManager: &tokenManager,
 		jobQueue:     jobQueue,
