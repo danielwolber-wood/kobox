@@ -45,17 +45,21 @@ func (s *Server) worker(n int) {
 	for job := range s.jobQueue {
 		switch job.currentStep {
 		case StepPrefetch:
+			// TODO implement a queue system of some kind for tasks that failed
 			// TODO check if a manual title was passed in and, if so, use that
 			fmt.Println("fetching")
 			article, err := readability.FromURL(string(job.url), 30*time.Second)
 			if err != nil {
 				log.Printf("Error fetching article: %v\n", err)
+				continue
 			}
 			ro := ReadabilityObject{
 				Title:   article.Title,
 				Content: article.Content,
 				Excerpt: article.Excerpt,
 			}
+			//log.Printf("content is: \n%v\n", article.Content)
+			//log.Printf("textcontent is: \n%v\n", article.TextContent)
 			job.readabilityObject = ro
 			job.currentStep = StepExtracted
 			s.jobQueue <- job
@@ -82,11 +86,12 @@ func (s *Server) worker(n int) {
 			accessToken, err := s.tokenManager.GetValidToken()
 			if err != nil {
 				log.Printf("error getting new access token")
+				continue
 			}
-			s.tokenManager.mu.Unlock()
 			err = Upload(u, accessToken)
 			if err != nil {
 				log.Printf("Error uploading: %v\n", err)
+				continue
 			}
 			fmt.Println("done")
 			// TODO add to queue

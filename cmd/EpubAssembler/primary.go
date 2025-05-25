@@ -37,7 +37,7 @@ func Extract(worker JSWorker, html HTML, title string) (ReadabilityObject, error
 
 // Generate accepts a ReadabilityObject and returns an Epub
 func Generate(rr ReadabilityObject) (Epub, error) {
-	html := GenerateHTML(rr.Title, rr.Title)
+	html := GenerateHTML(rr.Title, rr.Content)
 	epub, err := ConvertStringWithPandoc(html, "html", "epub")
 	if err != nil {
 		return Epub{}, err
