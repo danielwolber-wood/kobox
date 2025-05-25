@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/go-shiori/go-readability"
+	"strings"
 	"sync"
 
 	//"golang.org/x/oauth2"
@@ -52,8 +53,20 @@ func (s *Server) worker(n int) {
 			job.generateOptions = ro
 			job.taskType = TaskGenerate
 			s.jobQueue <- job
+		case TaskExtract:
+			// html request -> generateOptions
+			title := job.generateOptions.Title
+			fmt.Printf("title is %v\n", title)
+			generateOption, err := Extract(job.htmlReader)
+			if err != nil {
+				log.Printf("error extracting article from reader: %v\n", err)
+				continue
+			}
+			job.generateOptions = generateOption
+			job.taskType = TaskGenerate
+			s.jobQueue <- job
 		case TaskGenerate:
-			// run epub generation, ro -> epub []bytes
+			// run epub generation, generateOptions -> epub []bytes
 			fmt.Println("generating")
 			epub, err := Generate(job.generateOptions)
 			if err != nil {
@@ -68,7 +81,7 @@ func (s *Server) worker(n int) {
 			u := UploadOptions{
 				Data:            job.epub,
 				Mimetype:        "application/epub+zip",
-				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", job.generateOptions.Title),
+				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", sanitizeString(job.generateOptions.Title)),
 			}
 			fmt.Println("uploading")
 			fmt.Printf("u is %v\n", u)
@@ -92,4 +105,15 @@ func (s *Server) worker(n int) {
 			continue
 		}
 	}
+}
+func sanitizeString(input string) string {
+	replacer := strings.NewReplacer(
+		"?", "_",
+		"\"", "_",
+		"*", "_",
+		"\\", "_",
+		"|", "_",
+		"/", "_",
+	)
+	return replacer.Replace(input)
 }

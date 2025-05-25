@@ -25,10 +25,11 @@ func main() {
 	r := http.NewServeMux()
 	r.HandleFunc("/health", handleHealthCheck)
 	r.HandleFunc("/v2/api/upload/url", s.handlerUploadURL)
-	//r.HandleFunc("/v2/api/extract", s.handleExtract)
-	//r.HandleFunc("/v2/api/generate", s.handleGenerate)
-	//r.HandleFunc("/v2/api/upload", s.handleUpload)
+	r.HandleFunc("/v2/api/upload/html", s.handlerUploadFullPage)
 	fmt.Println("Serving on :8080")
-	http.ListenAndServe(":8080", r)
-
+	err = http.ListenAndServeTLS(":8080", "server.crt", "server.key", r) // I tried this line and everything returned 404
+	//err = http.ListenAndServe(":8080", r)
+	if err != nil {
+		panic(err)
+	}
 }
