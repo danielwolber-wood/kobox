@@ -12,24 +12,30 @@ import (
 )
 
 type Server struct {
-	tokenManager *TokenManager
-	jobQueue     chan Job
+	tokenManager    *TokenManager
+	jobQueue        chan Job
+	tokenConfigured bool
 }
 
-func newServer(opts RequestRefreshTokenPKCEOptions) (*Server, error) {
-
+func newServer() (*Server, error) {
 	jobQueue := make(chan Job, 256)
-	log.Printf("requesting refresh token")
-	token, err := RequestRefreshTokenPKCE(opts)
-	log.Printf("refresh token is %v\n", token)
-	if err != nil {
-		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
-	}
-	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID}
 	return &Server{
-		tokenManager: &tokenManager,
-		jobQueue:     jobQueue,
+		//tokenManager: &tokenManager,
+		jobQueue:        jobQueue,
+		tokenConfigured: false,
 	}, nil
+}
+
+func (s *Server) configureTokenManager(accessToken *Token) {
+	token := Token{
+		AccessToken:  accessToken.AccessToken,
+		TokenType:    accessToken.TokenType,
+		RefreshToken: accessToken.RefreshToken,
+	}
+	tokenManager := TokenManager{mu: sync.RWMutex{}, token: token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: dropboxClientId}
+	s.tokenManager = &tokenManager
+	s.tokenConfigured = true
+	s.tokenManager.GetValidToken()
 }
 
 func (s *Server) worker(n int) {
