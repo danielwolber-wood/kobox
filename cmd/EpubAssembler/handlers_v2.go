@@ -31,9 +31,20 @@ func (s *Server) handlerUploadURL(w http.ResponseWriter, r *http.Request) {
 	s.jobQueue <- job
 }
 
-func handlerUploadFullPage(w http.ResponseWriter, r *http.Request) {
+func (s *Server) handlerUploadFullPage(w http.ResponseWriter, r *http.Request) {
+	var obj HTMLRequestObject
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		response.WriteError(w, http.StatusInternalServerError, fmt.Sprintf("error reading body:%v\n", err))
+		return
+	}
+	err = json.Unmarshal(body, &obj)
+	if err != nil {
+		response.WriteError(w, http.StatusBadRequest, fmt.Sprintf("error parsing request:%v\n", err))
+		return
+	}
+	defer r.Body.Close()
+	html := obj.Html
+	job := Job{TaskExtract, "", html, nil, GenerateOptions{Title: obj.Title}, UploadOptions{}}
+	s.jobQueue <- job
 }
-
-func handlerUploadReadabilityObject(w http.ResponseWriter, r *http.Request) {}
-
-func handlerUploadEpub(w http.Request, r *http.Request) {}
