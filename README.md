@@ -31,6 +31,17 @@ There are really four programs:
 3. A feed reader/tracker/crawler that keeps track of feeds, waits for new posts, etc
 4. A browser extension which works for processing individual webpages, turning them into epubs, and sending them to Dropbox
 
+#### Downloader/Processor
+
+Basically, the pipeline looks like this:
+
+```txt
+url -> full page -> readability object -> minimal html -> epub -> dropbox
+```
+
+Where the API accepts any of the steps leading up to Dropbox, and processes them all the way down to uploading them to
+dropbox. Since the minimal html -> epub is so minimal, I combine them into a single "Generate" step.
+
 ## TODO
 
 * Caching
@@ -44,6 +55,9 @@ There are really four programs:
 * Feed storage
 * There are really two types of RSS feeds: those which include the content of the post, and those which include a link
   to the post. It maye be better to find an external RSS feed parser
-go 
-* Handle Atom syndication feeds http://www.w3.org/2005/Atom https://datatracker.ietf.org/doc/html/rfc4287
-* 
+ 
+* Proper handling of secrets/env configuration
+* Dockerization
+* Test
+* CI/CD
+* Real, Actual HTTPS instead of a self-signed cert

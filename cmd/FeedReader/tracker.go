@@ -6,9 +6,8 @@ import (
 )
 
 type Server struct {
-	readabilityParser *ReadabilityParser
-	opml              *OPML
-	opmlFilename      string
+	opml         OPML
+	opmlFilename string
 }
 
 func newServer() (*Server, error) {
@@ -31,13 +30,8 @@ func newServer() (*Server, error) {
 			return nil, err
 		}
 	}
-	parser, err := NewReadabilityParser()
-	if err != nil {
-		return nil, err
-	}
 	return &Server{
-		readabilityParser: parser,
-		opml:              &opml,
-		opmlFilename:      opmlFilename,
+		opml:         opml,
+		opmlFilename: opmlFilename,
 	}, nil
 }

@@ -1,11 +1,7 @@
-package main
+package response
 
 type ReadabilityURLRequest struct {
 	Url string `json:"url"`
-}
-
-type AddFeedRequest struct {
-	url string `json:"url"`
 }
 
 type ErrorResponse struct {
