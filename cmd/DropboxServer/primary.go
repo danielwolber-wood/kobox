@@ -9,18 +9,6 @@ import (
 	"net/url"
 )
 
-/*
-// Fetch accepts a URL string and returns HTML
-func Fetch(url URL) (*HTML, error) {
-	resp, err := http.Get(string(url))
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-	return (*HTML)(&resp.Body), nil
-}
-*/
-
 // Extract accepts io.Reader and returns a GenerateOptions
 func Extract(r io.Reader) (GenerateOptions, error) {
 	urlObj, err := url.Parse("example.com")
