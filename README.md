@@ -1,7 +1,7 @@
 
 # Kobox
 
-**Kobox** is a comprehensive solution for seamlessly transferring web content to Kobo eReaders. The system consists of two integrated components that enable effortless conversion and synchronization of web articles and pages to your reading device.
+With Firefox deprecating Pocket and the profusion of ads making it painful to read in the browser, a new solution was needed to enable seamless read-later functionality for Kobo eReaders. Leveraging Kobo's native Dropbox integration, __Kobox__ is a comprehensive solution for seamlessly transforming any webpage into an ad-free, highly readable EPUB with automatic syncing onto device.
 
 ## Overview
 
