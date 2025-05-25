@@ -11,37 +11,25 @@ import (
 )
 
 type Server struct {
-	tokenManager    *TokenManager
-	jsWorkerFactory *JSWorkerFactory
-	jobQueue        chan Job
+	tokenManager *TokenManager
+	jobQueue     chan Job
 }
 
 func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
 
 	jobQueue := make(chan Job, 256)
-	jsWorkerFactory, err := NewJSWorkerFactory()
-	if err != nil {
-		return nil, fmt.Errorf("Could not create worker factory: %v\n", err)
-	}
 	token, err := RequestRefreshToken(opts)
 	if err != nil {
 		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
 	}
 	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID, ClientSecret: opts.ClientSecret}
 	return &Server{
-		tokenManager:    &tokenManager,
-		jobQueue:        jobQueue,
-		jsWorkerFactory: jsWorkerFactory,
+		tokenManager: &tokenManager,
+		jobQueue:     jobQueue,
 	}, nil
 }
 
 func (s *Server) worker(n int) {
-	/* jsWorker, err := s.jsWorkerFactory.NewJSWorker()
-	if err != nil {
-		log.Printf("Failed to start worker: %v\n", err)
-		return
-	}
-	*/
 	for job := range s.jobQueue {
 		// TODO add Task for taking as input a full HTML page
 		switch job.taskType {

@@ -1,8 +1,6 @@
 package main
 
 import (
-	_ "embed"
-	"github.com/dop251/goja"
 	"sync"
 	"time"
 )
@@ -70,17 +68,6 @@ type UploadObject struct {
 	Data            []byte
 	Mimetype        string
 	DestinationPath string
-}
-
-//go:embed readability.js
-var readabilityJS string
-
-type JSWorkerFactory struct {
-	readabilityProgram *goja.Program
-}
-
-type JSWorker struct {
-	vm *goja.Runtime
 }
 
 type Job struct {
