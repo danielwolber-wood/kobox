@@ -55,3 +55,9 @@ dropbox. Since the minimal html -> epub is so minimal, I combine them into a sin
 * Feed storage
 * There are really two types of RSS feeds: those which include the content of the post, and those which include a link
   to the post. It maye be better to find an external RSS feed parser
+ 
+* Proper handling of secrets/env configuration
+* Dockerization
+* Test
+* CI/CD
+* Real, Actual HTTPS instead of a self-signed cert
