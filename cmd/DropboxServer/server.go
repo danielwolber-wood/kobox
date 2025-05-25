@@ -48,8 +48,6 @@ func (s *Server) worker(n int) {
 				Content: article.Content,
 				Excerpt: article.Excerpt,
 			}
-			//log.Printf("content is: \n%v\n", article.Content)
-			//log.Printf("textcontent is: \n%v\n", article.TextContent)
 			job.generateOptions = ro
 			job.taskType = TaskGenerate
 			s.jobQueue <- job
