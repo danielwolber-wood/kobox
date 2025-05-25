@@ -27,7 +27,7 @@ func (s *Server) handlerUploadURL(w http.ResponseWriter, r *http.Request) {
 	}
 	defer r.Body.Close()
 	url := obj.Url
-	job := Job{StepPrefetch, url, "", nil, ReadabilityObject{Title: obj.Title}, UploadObject{}}
+	job := Job{TaskFetch, url, "", nil, GenerateOptions{Title: obj.Title}, UploadOptions{}}
 	s.jobQueue <- job
 }
 
