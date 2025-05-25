@@ -9,7 +9,7 @@ import (
 func main() {
 	refreshOptions, err := AuthFlowPKCE()
 	if err != nil {
-		log.Fatal("error with auth flow: %v\n", err)
+		log.Fatalf("error with auth flow: %v\n", err)
 	}
 
 	s, err := newServer(*refreshOptions)
