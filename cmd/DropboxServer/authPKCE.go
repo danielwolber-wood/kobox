@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/joho/godotenv"
 	"io"
+	"log"
 	"math/big"
 	"net/http"
 	"net/url"
@@ -16,7 +17,7 @@ import (
 )
 
 func RandomString(n int) (string, error) {
-	var chars = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-._~")
+	var chars = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-._")
 	b := make([]rune, n)
 	for i := range b {
 		n, err := rand.Int(rand.Reader, big.NewInt(int64(len(chars))))
@@ -49,11 +50,7 @@ func GetPKCE() (*PKCECode, error) {
 
 func GetAuthCodePKCE(appKey string, pkce *PKCECode) (string, error) {
 	//https://www.dropbox.com/oauth2/authorize?client_id=<APP_KEY>&response_type=code&code_challenge=<CHALLENGE>&code_challenge_method=<METHOD>
-	pkce, err := GetPKCE()
 	challengeMethod := "S256"
-	if err != nil {
-		return "", err
-	}
 	authUrl := fmt.Sprintf("https://www.dropbox.com/oauth2/authorize?client_id=%s&token_access_type=offline&response_type=code&code_challenge=%s&code_challenge_method=%s", appKey, pkce.CodeChallenge, challengeMethod)
 	fmt.Printf("Navigate to \n%s\n and enter the key here: ", authUrl)
 	var code string
@@ -75,6 +72,7 @@ func RequestAccessTokenPKCE(opts RequestAccessTokenPKCEOptions) (*Token, error) 
 	data.Set("grant_type", "authorization_code")
 	data.Set("client_id", opts.ClientID)
 	data.Set("code_verifier", opts.CodeVerifier)
+	log.Printf("code verifier is: %s\n", opts.CodeVerifier)
 	resp, err := http.Post(
 		"https://api.dropbox.com/oauth2/token",
 		"application/x-www-form-urlencoded",
@@ -83,10 +81,12 @@ func RequestAccessTokenPKCE(opts RequestAccessTokenPKCEOptions) (*Token, error) 
 	if err != nil {
 		return nil, err
 	}
+	log.Printf("status code is %s\n", resp.StatusCode)
 	if resp.StatusCode != http.StatusOK {
 		body, _ := io.ReadAll(resp.Body)
 		return nil, fmt.Errorf("HTTP %d: %s", resp.StatusCode, string(body))
 	}
+	log.Printf("resp.Body is %s\n", resp.Body)
 	var token Token
 	decoder := json.NewDecoder(resp.Body)
 	defer resp.Body.Close()
@@ -94,6 +94,7 @@ func RequestAccessTokenPKCE(opts RequestAccessTokenPKCEOptions) (*Token, error) 
 	if err != nil {
 		return nil, err
 	}
+	log.Printf("token is %s\n", token)
 
 	return &token, nil
 
@@ -107,6 +108,7 @@ func RequestRefreshTokenPKCE(opts RequestRefreshTokenPKCEOptions) (*Token, error
 		    -d client_id=<APP_KEY>
 	*/
 	data := url.Values{}
+	data.Set("grant_type", "refresh_token")
 	data.Set("refresh_token", opts.RefreshToken)
 	data.Set("client_id", opts.ClientID)
 	resp, err := http.Post(
@@ -145,7 +147,9 @@ func AuthFlowPKCE() (*RequestRefreshTokenPKCEOptions, error) {
 		if err != nil {
 			return nil, err
 		}
+		log.Printf("getting authCode\n")
 		authCode, err := GetAuthCodePKCE(dropboxClientId, pkce)
+		log.Printf("auth code is %v\n", authCode)
 		if err != nil {
 			return nil, err
 		}
@@ -154,7 +158,9 @@ func AuthFlowPKCE() (*RequestRefreshTokenPKCEOptions, error) {
 			ClientID:     dropboxClientId,
 			CodeVerifier: pkce.CodeVerifier,
 		}
+		log.Printf("getting access token PKCE")
 		accessToken, err := RequestAccessTokenPKCE(opts)
+		log.Printf("access token PKCE is %v\n", accessToken)
 		if err != nil {
 			return nil, err
 		}

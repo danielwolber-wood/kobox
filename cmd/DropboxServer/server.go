@@ -19,7 +19,9 @@ type Server struct {
 func newServer(opts RequestRefreshTokenPKCEOptions) (*Server, error) {
 
 	jobQueue := make(chan Job, 256)
+	log.Printf("requesting refresh token")
 	token, err := RequestRefreshTokenPKCE(opts)
+	log.Printf("refresh token is %v\n", token)
 	if err != nil {
 		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
 	}
