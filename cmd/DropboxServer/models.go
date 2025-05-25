@@ -34,6 +34,17 @@ type RequestRefreshTokenOptions struct {
 	ClientSecret string
 }
 
+type RequestRefreshTokenPKCEOptions struct {
+	RefreshToken string
+	ClientID     string
+}
+
+type RequestAccessTokenPKCEOptions struct {
+	AuthCode     string
+	ClientID     string
+	CodeVerifier string
+}
+
 // NOTE access token is the short-lived one
 type Token struct {
 	AccessToken  string `json:"access_token"`
@@ -42,11 +53,11 @@ type Token struct {
 }
 
 type TokenManager struct {
-	mu           sync.RWMutex
-	token        Token
-	expiresAt    time.Time
-	ClientID     string
-	ClientSecret string
+	mu        sync.RWMutex
+	token     Token
+	expiresAt time.Time
+	ClientID  string
+	//ClientSecret string
 }
 
 type URLRequestObject struct {
@@ -79,4 +90,9 @@ type Job struct {
 	epub            Epub
 	generateOptions GenerateOptions
 	uploadOptions   UploadOptions
+}
+
+type PKCECode struct {
+	CodeVerifier  string
+	CodeChallenge string
 }

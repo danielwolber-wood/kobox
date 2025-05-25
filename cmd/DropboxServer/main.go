@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	refreshOptions, err := AuthFlow()
+	refreshOptions, err := AuthFlowPKCE()
 	if err != nil {
-		log.Fatal("error with auth flow: %v\n", err)
+		log.Fatalf("error with auth flow: %v\n", err)
 	}
 
 	s, err := newServer(*refreshOptions)
@@ -27,8 +27,7 @@ func main() {
 	r.HandleFunc("/v2/api/upload/url", s.handlerUploadURL)
 	r.HandleFunc("/v2/api/upload/html", s.handlerUploadFullPage)
 	fmt.Println("Serving on :8080")
-	err = http.ListenAndServeTLS(":8080", "server.crt", "server.key", r) // I tried this line and everything returned 404
-	//err = http.ListenAndServe(":8080", r)
+	err = http.ListenAndServeTLS(":8080", "server.crt", "server.key", r)
 	if err != nil {
 		panic(err)
 	}

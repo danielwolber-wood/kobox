@@ -41,7 +41,6 @@ func Upload(uploadObject UploadOptions, accessToken string) error {
 	req.Header.Set("Content-Type", "application/octet-stream")
 	req.Header.Set("Dropbox-API-Arg", fmt.Sprintf("{\"path\": \"%s\"}", uploadObject.DestinationPath))
 	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", accessToken))
-	fmt.Println(req)
 
 	client := &http.Client{}
 	resp, err := client.Do(req)

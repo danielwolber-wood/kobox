@@ -16,14 +16,16 @@ type Server struct {
 	jobQueue     chan Job
 }
 
-func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
+func newServer(opts RequestRefreshTokenPKCEOptions) (*Server, error) {
 
 	jobQueue := make(chan Job, 256)
-	token, err := RequestRefreshToken(opts)
+	log.Printf("requesting refresh token")
+	token, err := RequestRefreshTokenPKCE(opts)
+	log.Printf("refresh token is %v\n", token)
 	if err != nil {
 		return nil, fmt.Errorf("could not get refresh token: %v\n", err)
 	}
-	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID, ClientSecret: opts.ClientSecret}
+	tokenManager := TokenManager{mu: sync.RWMutex{}, token: *token, expiresAt: time.Now().Add(time.Second * 14000), ClientID: opts.ClientID}
 	return &Server{
 		tokenManager: &tokenManager,
 		jobQueue:     jobQueue,
@@ -32,7 +34,6 @@ func newServer(opts RequestRefreshTokenOptions) (*Server, error) {
 
 func (s *Server) worker(n int) {
 	for job := range s.jobQueue {
-		// TODO add Task for taking as input a full HTML page
 		switch job.taskType {
 		case TaskFetch:
 			// TODO implement a queue system of some kind for tasks that failed
@@ -48,8 +49,6 @@ func (s *Server) worker(n int) {
 				Content: article.Content,
 				Excerpt: article.Excerpt,
 			}
-			//log.Printf("content is: \n%v\n", article.Content)
-			//log.Printf("textcontent is: \n%v\n", article.TextContent)
 			job.generateOptions = ro
 			job.taskType = TaskGenerate
 			s.jobQueue <- job
@@ -84,7 +83,6 @@ func (s *Server) worker(n int) {
 				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", sanitizeString(job.generateOptions.Title)),
 			}
 			fmt.Println("uploading")
-			fmt.Printf("u is %v\n", u)
 			accessToken, err := s.tokenManager.GetValidToken()
 			if err != nil {
 				log.Printf("error getting new access token")
