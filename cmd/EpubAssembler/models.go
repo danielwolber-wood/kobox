@@ -58,23 +58,23 @@ type HTMLRequestObject struct {
 	Title string `json:"title"`
 }
 
-type ReadabilityObject struct {
+type GenerateOptions struct {
 	Title   string `json:"title"`
 	Content string `json:"content"`
 	Excerpt string `json:"excerpt"`
 }
 
-type UploadObject struct {
+type UploadOptions struct {
 	Data            []byte
 	Mimetype        string
 	DestinationPath string
 }
 
 type Job struct {
-	taskType          TaskType
-	url               URL
-	fullText          HTML
-	epub              Epub
-	readabilityObject ReadabilityObject
-	uploadObject      UploadObject
+	taskType        TaskType
+	url             URL
+	fullText        HTML
+	epub            Epub
+	generateOptions GenerateOptions
+	uploadOptions   UploadOptions
 }

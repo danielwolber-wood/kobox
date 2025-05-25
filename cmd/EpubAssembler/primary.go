@@ -3,40 +3,39 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"github.com/go-shiori/go-readability"
 	"io"
 	"net/http"
+	"net/url"
 )
 
+/*
 // Fetch accepts a URL string and returns HTML
-func Fetch(url URL) (HTML, error) {
+func Fetch(url URL) (*HTML, error) {
 	resp, err := http.Get(string(url))
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	defer resp.Body.Close()
-	data, err := io.ReadAll(resp.Body)
+	return (*HTML)(&resp.Body), nil
+}
+*/
+
+// Extract accepts io.Reader and returns a GenerateOptions
+func Extract(r io.Reader) (GenerateOptions, error) {
+	urlObj, err := url.Parse("example.com")
 	if err != nil {
-		return "", err
+		return GenerateOptions{}, err
 	}
-	return HTML(data), nil
+	article, err := readability.FromReader(r, urlObj)
+	if err != nil {
+		return GenerateOptions{}, err
+	}
+	return GenerateOptions{Title: article.Title, Content: article.Content, Excerpt: article.Excerpt}, nil
 }
 
-// Extract accepts HTML and returns a ReadabilityObject
-func Extract(worker JSWorker, html HTML, title string) (ReadabilityObject, error) {
-	// TODO This function doesn't seem to work, may be a limitation of Readability.js; it's hard for me to debug since I don't know JS
-	// it seems to be returning a big mess instead of extracted body, which is what confuses me
-	obj, err := worker.ParseHTML(html)
-	if err != nil {
-		return ReadabilityObject{}, err
-	}
-	if title != "" {
-		obj.Title = title
-	}
-	return *obj, nil
-}
-
-// Generate accepts a ReadabilityObject and returns an Epub
-func Generate(rr ReadabilityObject) (Epub, error) {
+// Generate accepts a GenerateOptions and returns an Epub
+func Generate(rr GenerateOptions) (Epub, error) {
 	html := GenerateHTML(rr.Title, rr.Content)
 	epub, err := ConvertStringWithPandoc(html, "html", "epub")
 	if err != nil {
@@ -45,8 +44,8 @@ func Generate(rr ReadabilityObject) (Epub, error) {
 	return epub, nil
 }
 
-// Upload accepts an UploadObject and returns nothing
-func Upload(uploadObject UploadObject, accessToken string) error {
+// Upload accepts an UploadOptions and returns nothing
+func Upload(uploadObject UploadOptions, accessToken string) error {
 	req, err := http.NewRequest("POST", "https://content.dropboxapi.com/2/files/upload", bytes.NewReader(uploadObject.Data))
 	if err != nil {
 		return err

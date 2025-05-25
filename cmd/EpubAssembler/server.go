@@ -42,20 +42,20 @@ func (s *Server) worker(n int) {
 				log.Printf("Error fetching article: %v\n", err)
 				continue
 			}
-			ro := ReadabilityObject{
+			ro := GenerateOptions{
 				Title:   article.Title,
 				Content: article.Content,
 				Excerpt: article.Excerpt,
 			}
 			//log.Printf("content is: \n%v\n", article.Content)
 			//log.Printf("textcontent is: \n%v\n", article.TextContent)
-			job.readabilityObject = ro
+			job.generateOptions = ro
 			job.taskType = TaskGenerate
 			s.jobQueue <- job
 		case TaskGenerate:
 			// run epub generation, ro -> epub []bytes
 			fmt.Println("generating")
-			epub, err := Generate(job.readabilityObject)
+			epub, err := Generate(job.generateOptions)
 			if err != nil {
 				log.Printf("Error generating epub: %v\n", err)
 				continue
@@ -65,10 +65,10 @@ func (s *Server) worker(n int) {
 			s.jobQueue <- job
 		case TaskUpload:
 			// construct upload object then upload to dropbox
-			u := UploadObject{
+			u := UploadOptions{
 				Data:            job.epub,
 				Mimetype:        "application/epub+zip",
-				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", job.readabilityObject.Title),
+				DestinationPath: fmt.Sprintf("/Apps/Rakuten Kobo/%v.epub", job.generateOptions.Title),
 			}
 			fmt.Println("uploading")
 			fmt.Printf("u is %v\n", u)
