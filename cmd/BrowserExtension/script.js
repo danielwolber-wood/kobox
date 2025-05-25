@@ -58,7 +58,7 @@
                 url: window.location.href
             });
 
-            const response = await fetch('https://localhost:8080/v2/api/upload/html', {
+            const response = await fetch('https://localhost:12332/v2/api/upload/html', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

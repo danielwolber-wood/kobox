@@ -13,3 +13,4 @@
 * Web portal for auth/configuration rather than CLI (basically needed for dockerization)
 * Multi-user GCP-hosted version of the application
 * Better configuration management
+* Better handling of failed tasks
