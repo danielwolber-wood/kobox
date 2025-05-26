@@ -48,7 +48,7 @@ docker run -p 12332:12332 -v ./certs:/app/certs danielwolber-wood/kobox-mono
 2. **Install the browser extension**: Add the user script (`script.js`) to your user script manager
 3. **Start the server**: Launch the Kobox server application
 4. **Authorize Dropbox access**: Navigate to `https://localhost:12332/config` and complete the Dropbox authorization process
-5. **Begin using**: Use either the browser extension button or direct API calls to send content to your eReader
+5. **Begin using**: Use either the browser extension button or direct API calls to send content to your eReader. If you hold down control, an "Upload Page" button should appear in the top right corner of the page.
 
 ## API Reference
 
