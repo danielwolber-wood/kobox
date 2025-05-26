@@ -28,7 +28,35 @@
         cursor: pointer;
         box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         transition: all 0.2s ease;
+        display: none;
     `;
+
+    // Show/hide button based on Control key state
+    let isControlPressed = false;
+
+    function updateButtonVisibility() {
+        uploadButton.style.display = isControlPressed ? 'block' : 'none';
+    }
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Control' && !isControlPressed) {
+            isControlPressed = true;
+            updateButtonVisibility();
+        }
+    });
+
+    document.addEventListener('keyup', (event) => {
+        if (event.key === 'Control' && isControlPressed) {
+            isControlPressed = false;
+            updateButtonVisibility();
+        }
+    });
+
+    // Also handle when the window loses focus (to reset state)
+    window.addEventListener('blur', () => {
+        isControlPressed = false;
+        updateButtonVisibility();
+    });
 
     uploadButton.addEventListener('mouseenter', () => {
         uploadButton.style.background = '#0056D6';
