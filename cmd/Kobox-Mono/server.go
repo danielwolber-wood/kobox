@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/go-shiori/go-readability"
+	"log"
+	"s
 	"strings"
-	"sync"
-
-	//"golang.org/x/oauth2"
 	"log"
 	"time"
 )
