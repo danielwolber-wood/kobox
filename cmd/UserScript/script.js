@@ -39,14 +39,14 @@
     }
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Control' && !isControlPressed) {
+        if (event.key === 'Meta' && !isControlPressed) {
             isControlPressed = true;
             updateButtonVisibility();
         }
     });
 
     document.addEventListener('keyup', (event) => {
-        if (event.key === 'Control' && isControlPressed) {
+        if (event.key === 'Meta' && isControlPressed) {
             isControlPressed = false;
             updateButtonVisibility();
         }
