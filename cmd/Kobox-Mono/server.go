@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"github.com/go-shiori/go-readability"
 	"log"
-	"s
 	"strings"
-	"log"
+	"sync"
 	"time"
 )
 
